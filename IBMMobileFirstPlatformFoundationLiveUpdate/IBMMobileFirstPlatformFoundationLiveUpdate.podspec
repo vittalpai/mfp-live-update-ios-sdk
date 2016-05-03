@@ -1,17 +1,13 @@
 Pod::Spec.new do |s|
-s.name         = 'IBMMobileFirstPlatformFoundationLiveUpdate'
-s.version      = '8.0.0'
-s.license      = "IBM - MobileFirst Platform Foundation 8.0 beta license agreement"
-s.author       = { "IBM MobileFirst platform for iOS and watchOS." => "mobilsdk@us.ibm.com" }
-s.summary      = "LiveUpdate SDK"
-s.description  = "Use this SDK to add LiveUpdate features to your IBM MobileFirst platform for iOS"
-s.homepage   = "https://mobilefirstplatform.ibmcloud.com/beta/#license"
-s.source     = {:git => 'git@github.ibm.com:MobileFirst/mfp-live-update-ios-sdk.git'}
-platform = :ios
-s.ios.deployment_target = '8.0'
-
-s.dependency 'IBMMobileFirstPlatformFoundation'
-
-s.source_files = "LiveUpdateSDK/**/*.{swift}"
-
+  s.name             = "IBMMobileFirstPlatformFoundationLiveUpdate"
+  s.version          = '8.0.0'
+  s.license          = "IBM - MobileFirst Platform Foundation 8.0 beta license agreement"
+  s.author           = { "LiveUpdate service for IBM MobileFirst platform" => "ishaib@il.ibm.com" }
+  s.summary          = "LiveUpdate service for IBM MobileFirst Platform Foundation"
+  s.description      = "Contains LiveUpdate service for IBM MobileFirst Platform Foundation"
+  s.homepage         = "http://ibm.com"
+  s.source           = {:git => 'git@github.ibm.com:MobileFirst/mfp-live-update-ios-sdk.git'}
+  s.platform         = :ios, "8.0"
+  s.dependency 'IBMMobileFirstPlatformFoundation','~> 8.0'
+  s.source_files = "IBMMobileFirstPlatformFoundationLiveUpdate/**/*.{swift}"
 end
