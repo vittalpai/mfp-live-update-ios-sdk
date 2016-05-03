@@ -1,2 +1,0 @@
-./build.sh ConfigurationServiceSDK
-cp -vr ./universal/Debug/ConfigurationServiceSDK.framework ../ConfigurationServiceSDKTest/Pods/IBMMobileFirstPlatformFoundationConfigurationService/IBMMobileFirstPlatformFoundationConfigurationService/Frameworks
