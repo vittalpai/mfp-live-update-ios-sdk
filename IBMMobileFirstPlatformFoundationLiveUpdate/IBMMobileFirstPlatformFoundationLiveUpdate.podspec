@@ -7,11 +7,10 @@ s.summary      = "LiveUpdate SDK"
 s.description  = "Use this SDK to add LiveUpdate features to your IBM MobileFirst platform for iOS"
 s.homepage   = "https://mobilefirstplatform.ibmcloud.com/beta/#license"
 s.source     = {:git => 'git@github.ibm.com:MobileFirst/mfp-live-update-ios-sdk.git'}
+platform = :ios
+s.ios.deployment_target = '8.0'
 
-
-s.platforms = {
-:ios => "8.0"
-}
+s.dependency 'IBMMobileFirstPlatformFoundation'
 
 s.source_files = "LiveUpdateSDK/**/*.{swift}"
 
