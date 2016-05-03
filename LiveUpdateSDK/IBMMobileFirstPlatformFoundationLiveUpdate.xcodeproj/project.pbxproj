@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D494EAE31CD74F8900C5E552 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EADB1CD74F8900C5E552 /* Configuration.swift */; };
+		D494EAE41CD74F8900C5E552 /* ConfigurationInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EADC1CD74F8900C5E552 /* ConfigurationInstance.swift */; };
+		D494EAE51CD74F8900C5E552 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EADD1CD74F8900C5E552 /* ConfigurationService.swift */; };
+		D494EAE61CD74F8900C5E552 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EADE1CD74F8900C5E552 /* FileManager.swift */; };
+		D494EAE71CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = D494EADF1CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D494EAE81CD74F8900C5E552 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D494EAE01CD74F8900C5E552 /* Info.plist */; };
+		D494EAE91CD74F8900C5E552 /* LocalCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EAE11CD74F8900C5E552 /* LocalCache.swift */; };
+		D494EAEA1CD74F8900C5E552 /* ConfigurationServiceInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EAE21CD74F8900C5E552 /* ConfigurationServiceInstance.swift */; };
+		D4BA04E61CD7962F00F46FEF /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BA04E51CD7962F00F46FEF /* IBMMobileFirstPlatformFoundation.framework */; };
+		D4BA04EE1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BA04ED1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests.swift */; };
+		D4BA04F01CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AB438E1C55095100ADEBD3 /* IBMMobileFirstPlatformFoundationLiveUpdate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4BA04F11CD7A55B00F46FEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2AB43851C55095100ADEBD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2AB438D1C55095100ADEBD3;
+			remoteInfo = IBMMobileFirstPlatformFoundationLiveUpdate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		86AB8D8A64E1FA9D30A8BD2F /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig"; sourceTree = "<group>"; };
+		8853DB67A8C436C0C61AEB55 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig"; sourceTree = "<group>"; };
+		A2AB438E1C55095100ADEBD3 /* IBMMobileFirstPlatformFoundationLiveUpdate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBMMobileFirstPlatformFoundationLiveUpdate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D494EADB1CD74F8900C5E552 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		D494EADC1CD74F8900C5E552 /* ConfigurationInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationInstance.swift; sourceTree = "<group>"; };
+		D494EADD1CD74F8900C5E552 /* ConfigurationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
+		D494EADE1CD74F8900C5E552 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		D494EADF1CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBMMobileFirstPlatformFoundationLiveUpdate.h; sourceTree = "<group>"; };
+		D494EAE01CD74F8900C5E552 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D494EAE11CD74F8900C5E552 /* LocalCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCache.swift; sourceTree = "<group>"; };
+		D494EAE21CD74F8900C5E552 /* ConfigurationServiceInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationServiceInstance.swift; sourceTree = "<group>"; };
+		D4BA04E51CD7962F00F46FEF /* IBMMobileFirstPlatformFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IBMMobileFirstPlatformFoundation.framework; sourceTree = "<group>"; };
+		D4BA04EB1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBMMobileFirstPlatformFoundationLiveUpdateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4BA04ED1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMMobileFirstPlatformFoundationLiveUpdateTests.swift; sourceTree = "<group>"; };
+		D4BA04EF1CD7A55B00F46FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2AB438A1C55095100ADEBD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BA04E61CD7962F00F46FEF /* IBMMobileFirstPlatformFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4BA04E81CD7A55B00F46FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BA04F01CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A849DC67B9E77331AEA2241 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86AB8D8A64E1FA9D30A8BD2F /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig */,
+				8853DB67A8C436C0C61AEB55 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		527142C6367D8C85426368DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA04E51CD7962F00F46FEF /* IBMMobileFirstPlatformFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2AB43841C55095100ADEBD3 = {
+			isa = PBXGroup;
+			children = (
+				D494EADA1CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate */,
+				D4BA04EC1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests */,
+				A2AB438F1C55095100ADEBD3 /* Products */,
+				527142C6367D8C85426368DF /* Frameworks */,
+				3A849DC67B9E77331AEA2241 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A2AB438F1C55095100ADEBD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2AB438E1C55095100ADEBD3 /* IBMMobileFirstPlatformFoundationLiveUpdate.framework */,
+				D4BA04EB1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D494EADA1CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA04FA1CD7D78E00F46FEF /* API */,
+				D494EAFA1CD7536000C5E552 /* Cache */,
+				D494EADC1CD74F8900C5E552 /* ConfigurationInstance.swift */,
+				D494EAE21CD74F8900C5E552 /* ConfigurationServiceInstance.swift */,
+				D494EADF1CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate.h */,
+				D494EAE01CD74F8900C5E552 /* Info.plist */,
+			);
+			path = IBMMobileFirstPlatformFoundationLiveUpdate;
+			sourceTree = "<group>";
+		};
+		D494EAFA1CD7536000C5E552 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				D494EAE11CD74F8900C5E552 /* LocalCache.swift */,
+				D494EADE1CD74F8900C5E552 /* FileManager.swift */,
+			);
+			name = Cache;
+			sourceTree = "<group>";
+		};
+		D4BA04EC1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA04ED1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests.swift */,
+				D4BA04EF1CD7A55B00F46FEF /* Info.plist */,
+			);
+			path = IBMMobileFirstPlatformFoundationLiveUpdateTests;
+			sourceTree = "<group>";
+		};
+		D4BA04FA1CD7D78E00F46FEF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D494EADD1CD74F8900C5E552 /* ConfigurationService.swift */,
+				D494EADB1CD74F8900C5E552 /* Configuration.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A2AB438B1C55095100ADEBD3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D494EAE71CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A2AB438D1C55095100ADEBD3 /* IBMMobileFirstPlatformFoundationLiveUpdate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2AB43A21C55095100ADEBD3 /* Build configuration list for PBXNativeTarget "IBMMobileFirstPlatformFoundationLiveUpdate" */;
+			buildPhases = (
+				6B9E10CCCA370B784072798D /* 📦 Check Pods Manifest.lock */,
+				A2AB43891C55095100ADEBD3 /* Sources */,
+				A2AB438A1C55095100ADEBD3 /* Frameworks */,
+				A2AB438B1C55095100ADEBD3 /* Headers */,
+				A2AB438C1C55095100ADEBD3 /* Resources */,
+				CAD9368A82F13958F6E8D733 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBMMobileFirstPlatformFoundationLiveUpdate;
+			productName = ConfigurationServiceSDK;
+			productReference = A2AB438E1C55095100ADEBD3 /* IBMMobileFirstPlatformFoundationLiveUpdate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4BA04EA1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4BA04F31CD7A55B00F46FEF /* Build configuration list for PBXNativeTarget "IBMMobileFirstPlatformFoundationLiveUpdateTests" */;
+			buildPhases = (
+				D4BA04E71CD7A55B00F46FEF /* Sources */,
+				D4BA04E81CD7A55B00F46FEF /* Frameworks */,
+				D4BA04E91CD7A55B00F46FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4BA04F21CD7A55B00F46FEF /* PBXTargetDependency */,
+			);
+			name = IBMMobileFirstPlatformFoundationLiveUpdateTests;
+			productName = IBMMobileFirstPlatformFoundationLiveUpdateTests;
+			productReference = D4BA04EB1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2AB43851C55095100ADEBD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Dmitri Pikus";
+				TargetAttributes = {
+					A2AB438D1C55095100ADEBD3 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					D4BA04EA1CD7A55B00F46FEF = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = A2AB43881C55095100ADEBD3 /* Build configuration list for PBXProject "IBMMobileFirstPlatformFoundationLiveUpdate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A2AB43841C55095100ADEBD3;
+			productRefGroup = A2AB438F1C55095100ADEBD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2AB438D1C55095100ADEBD3 /* IBMMobileFirstPlatformFoundationLiveUpdate */,
+				D4BA04EA1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2AB438C1C55095100ADEBD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D494EAE81CD74F8900C5E552 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4BA04E91CD7A55B00F46FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B9E10CCCA370B784072798D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CAD9368A82F13958F6E8D733 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2AB43891C55095100ADEBD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D494EAEA1CD74F8900C5E552 /* ConfigurationServiceInstance.swift in Sources */,
+				D494EAE91CD74F8900C5E552 /* LocalCache.swift in Sources */,
+				D494EAE31CD74F8900C5E552 /* Configuration.swift in Sources */,
+				D494EAE51CD74F8900C5E552 /* ConfigurationService.swift in Sources */,
+				D494EAE41CD74F8900C5E552 /* ConfigurationInstance.swift in Sources */,
+				D494EAE61CD74F8900C5E552 /* FileManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4BA04E71CD7A55B00F46FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BA04EE1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4BA04F21CD7A55B00F46FEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2AB438D1C55095100ADEBD3 /* IBMMobileFirstPlatformFoundationLiveUpdate */;
+			targetProxy = D4BA04F11CD7A55B00F46FEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A2AB43A01C55095100ADEBD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A2AB43A11C55095100ADEBD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A2AB43A31C55095100ADEBD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86AB8D8A64E1FA9D30A8BD2F /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = IBMMobileFirstPlatformFoundationLiveUpdate/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.worklight.IBMMobileFirstPlatformFoundationLiveUpdate;
+				PRODUCT_NAME = IBMMobileFirstPlatformFoundationLiveUpdate;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2AB43A41C55095100ADEBD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8853DB67A8C436C0C61AEB55 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = IBMMobileFirstPlatformFoundationLiveUpdate/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.worklight.IBMMobileFirstPlatformFoundationLiveUpdate;
+				PRODUCT_NAME = IBMMobileFirstPlatformFoundationLiveUpdate;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D4BA04F41CD7A55B00F46FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = IBMMobileFirstPlatformFoundationLiveUpdateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.worklight.IBMMobileFirstPlatformFoundationLiveUpdateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D4BA04F51CD7A55B00F46FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = IBMMobileFirstPlatformFoundationLiveUpdateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.worklight.IBMMobileFirstPlatformFoundationLiveUpdateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2AB43881C55095100ADEBD3 /* Build configuration list for PBXProject "IBMMobileFirstPlatformFoundationLiveUpdate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2AB43A01C55095100ADEBD3 /* Debug */,
+				A2AB43A11C55095100ADEBD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2AB43A21C55095100ADEBD3 /* Build configuration list for PBXNativeTarget "IBMMobileFirstPlatformFoundationLiveUpdate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2AB43A31C55095100ADEBD3 /* Debug */,
+				A2AB43A41C55095100ADEBD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4BA04F31CD7A55B00F46FEF /* Build configuration list for PBXNativeTarget "IBMMobileFirstPlatformFoundationLiveUpdateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4BA04F41CD7A55B00F46FEF /* Debug */,
+				D4BA04F51CD7A55B00F46FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2AB43851C55095100ADEBD3 /* Project object */;
+}
