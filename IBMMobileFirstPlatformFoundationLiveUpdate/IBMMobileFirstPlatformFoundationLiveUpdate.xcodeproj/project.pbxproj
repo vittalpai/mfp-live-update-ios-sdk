@@ -31,7 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55E1C91C08B95FA0D434B3C3 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig"; sourceTree = "<group>"; };
 		A2AB438E1C55095100ADEBD3 /* IBMMobileFirstPlatformFoundationLiveUpdate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBMMobileFirstPlatformFoundationLiveUpdate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D024C771A059790884FD4672 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig"; sourceTree = "<group>"; };
 		D494EADB1CD74F8900C5E552 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		D494EADC1CD74F8900C5E552 /* ConfigurationInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationInstance.swift; sourceTree = "<group>"; };
 		D494EADD1CD74F8900C5E552 /* ConfigurationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				D4BA04EC1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests */,
 				A2AB438F1C55095100ADEBD3 /* Products */,
 				527142C6367D8C85426368DF /* Frameworks */,
+				EE7443145421F84C822FCA61 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +136,15 @@
 			name = API;
 			sourceTree = "<group>";
 		};
+		EE7443145421F84C822FCA61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55E1C91C08B95FA0D434B3C3 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig */,
+				D024C771A059790884FD4672 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -151,10 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2AB43A21C55095100ADEBD3 /* Build configuration list for PBXNativeTarget "IBMMobileFirstPlatformFoundationLiveUpdate" */;
 			buildPhases = (
+				54DD26CF4B022B1338B63E16 /* Check Pods Manifest.lock */,
 				A2AB43891C55095100ADEBD3 /* Sources */,
 				A2AB438A1C55095100ADEBD3 /* Frameworks */,
 				A2AB438B1C55095100ADEBD3 /* Headers */,
 				A2AB438C1C55095100ADEBD3 /* Resources */,
+				9B24C5ACC19D98ED2076316A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +209,7 @@
 				TargetAttributes = {
 					A2AB438D1C55095100ADEBD3 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = SWD968Z985;
 					};
 					D4BA04EA1CD7A55B00F46FEF = {
 						CreatedOnToolsVersion = 7.3;
@@ -236,6 +251,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54DD26CF4B022B1338B63E16 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9B24C5ACC19D98ED2076316A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A2AB43891C55095100ADEBD3 /* Sources */ = {
@@ -363,8 +411,11 @@
 		};
 		A2AB43A31C55095100ADEBD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55E1C91C08B95FA0D434B3C3 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -379,6 +430,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.worklight.IBMMobileFirstPlatformFoundationLiveUpdate;
 				PRODUCT_NAME = IBMMobileFirstPlatformFoundationLiveUpdate;
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -386,8 +438,11 @@
 		};
 		A2AB43A41C55095100ADEBD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D024C771A059790884FD4672 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -402,6 +457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.worklight.IBMMobileFirstPlatformFoundationLiveUpdate;
 				PRODUCT_NAME = IBMMobileFirstPlatformFoundationLiveUpdate;
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
