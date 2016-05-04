@@ -17,8 +17,16 @@ public class ConfigurationService {
     private init() {
     }
     
-    // Retrive configuration by segment
-    public func retrieveConfiguration (segment: String, useCache: Bool = true, completionHandler: (configuration: Configuration?, error: NSError?) -> Void) {
+    /**
+     Obtains the configuration by segment from server or cache
+     
+     - Parameter segment - the segment id which will be used by configuration adapter to return configuration
+     
+     - Parameter useCache - default is true, use false to explicitly obtain the configuration from the configuration adapter
+     
+     - Parameter completionHandler - the competition for retrieving the Configuration
+     */
+    public func obtainConfiguration (segment: String, useCache: Bool = true, completionHandler: (configuration: Configuration?, error: NSError?) -> Void) {
         let url = NSURL(string: serviceURL)!
         
         if let cachedConfig = LocalCache.getConfiguration(segment) where useCache == true {
@@ -31,8 +39,16 @@ public class ConfigurationService {
         }
     }
     
-    // Get configuration by params
-    public func retrieveConfiguration (params: [String:String], useCache: Bool = true, completionHandler: (configuration: Configuration?, error: NSError?) -> Void) {
+    /**
+    Obtains the configuration by params from server or cache
+     
+     - Parameter params - the parameters which will be used by configuration adapter to return configuration
+     
+     - Parameter useCache - default is true, use false to explicitly obtain the configuration from the configuration adapter
+     
+     - Parameter completionHandler - the competition for retrieving the Configuration
+     */
+    public func obtainConfiguration (params: [String:String], useCache: Bool = true, completionHandler: (configuration: Configuration?, error: NSError?) -> Void) {
         let url = NSURL(string: serviceURL)!
         let id = buildIDFromParams(params)
         
