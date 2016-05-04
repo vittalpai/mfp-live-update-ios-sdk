@@ -12,13 +12,11 @@ class FileManager {
     
     static func isExpired(configurationId: String) -> Bool {
         let metadataFile = MetadataFile()
-        
         return metadataFile.isExpired(configurationId)
     }
     
     static func configuration(configurationId: String) -> Configuration? {
         let configurationFile = ConfigurationFile()
-        
         return configurationFile.read(configurationId)
     }
     
