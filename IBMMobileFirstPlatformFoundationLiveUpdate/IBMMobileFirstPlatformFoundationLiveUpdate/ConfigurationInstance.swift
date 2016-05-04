@@ -18,14 +18,14 @@ class ConfigurationInstance: Configuration {
     }
     
     func isFeatureEnabled (featureName: String)->Bool {
-        if let features = _data["features"] {
+        if let features = _data["data"]!["features"]! {
             return features[featureName] as! Bool
         }
         return false
     }
     
     func getProperty (propertyName : String)->String {
-        if let properties = _data["properties"] {
+        if let properties = _data["data"]!["properties"]! {
             return properties[propertyName] as! String
         }
         return ""

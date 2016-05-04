@@ -10,7 +10,7 @@ import Foundation
 import IBMMobileFirstPlatformFoundation
 
 public class ConfigurationService {
-    private let serviceURL: String = "adapters/configService"
+    private let serviceURL: String = "adapters/dynamicAppsAdapter/configuration"
     
     public static let sharedInstance = ConfigurationService()
     
@@ -27,7 +27,7 @@ public class ConfigurationService {
      - Parameter completionHandler - the competition for retrieving the Configuration
      */
     public func obtainConfiguration (segment: String, useCache: Bool = true, completionHandler: (configuration: Configuration?, error: NSError?) -> Void) {
-        let url = NSURL(string: serviceURL)!
+        let url = NSURL(string: serviceURL.stringByAppendingString("/\(segment)"))!
         
         if let cachedConfig = LocalCache.getConfiguration(segment) where useCache == true {
             // Get cached configuration
