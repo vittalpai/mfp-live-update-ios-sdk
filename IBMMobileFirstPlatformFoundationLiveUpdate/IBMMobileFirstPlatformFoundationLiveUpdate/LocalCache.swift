@@ -9,6 +9,8 @@
 import Foundation
 
 class LocalCache {
+    private static let lock = NSLock()
+    
     static func getConfiguration(configurationId: String) -> Configuration? {
         lock.lock()
         defer {lock.unlock()}
@@ -33,6 +35,4 @@ class LocalCache {
     private static func getConfigurationReentered(configurationId: String) -> Configuration? {
         return FileManager.isExpired(configurationId) ? nil : FileManager.configuration(configurationId)
     }
-    
-    private static let lock = NSLock()
 }

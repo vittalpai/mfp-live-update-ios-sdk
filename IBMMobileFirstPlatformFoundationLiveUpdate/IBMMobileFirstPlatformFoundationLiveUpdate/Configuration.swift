@@ -16,7 +16,7 @@ public protocol Configuration {
      
      - Returns: true in case feature is enabled
      */
-    func isFeatureEnabled (featureName : String)->Bool
+    func isFeatureEnabled (featureName : String)->Bool?
     
     /**
      This function returns the property value
@@ -25,5 +25,5 @@ public protocol Configuration {
      
      - Returns: value for the propertyName
      */
-    func getProperty (propertyName : String)->String
+    func getProperty (propertyName : String)->String?
 }

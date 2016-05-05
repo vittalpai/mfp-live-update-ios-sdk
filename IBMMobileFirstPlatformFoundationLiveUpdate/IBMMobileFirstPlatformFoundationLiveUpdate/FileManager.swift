@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import IBMMobileFirstPlatformFoundation
 
 class FileManager {
     
+    //Static methods
     static func isExpired(configurationId: String) -> Bool {
         let metadataFile = MetadataFile()
         return metadataFile.isExpired(configurationId)
@@ -30,37 +32,45 @@ class FileManager {
         ConfigurationFile.purge(configurationId)
     }
     
+    //CacheFile
     class CacheFile {
-        init(name: String) {
-            self.name = name
-        }
-        
-        private static func getFolder(configurationId: String) -> String {
-            return documents.stringByAppendingPathComponent("\(FOLDER_CACHE)/\(configurationId)")
-        }
-        
-        private func getFullName(configurationId: String) -> String {
-            return CacheFile.getFolder(configurationId) + "/" + name
-        }
-        
-        private static let FOLDER_CACHE = "cache"
+        private static let folderCache = "cache"
         
         private static let manager = NSFileManager.defaultManager()
         private static let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
         private static let documents: AnyObject = paths[0]
         
         private var name: String
+        
+        init(name: String) {
+            self.name = name
+        }
+        
+        private static func getFolder(configurationId: String) -> String {
+            return documents.stringByAppendingPathComponent("\(folderCache)/\(configurationId)")
+        }
+        
+        private func getFullName(configurationId: String) -> String {
+            return CacheFile.getFolder(configurationId) + "/" + name
+        }
     }
 
+    //JsonFile
     class JsonFile: CacheFile {
+        
         func save(configuration: Configuration) {
+            OCLogger.getLogger().logTraceWithMessages("\(NSStringFromClass(JsonFile)) save: configurationId = \(configuration)")
+            
             if let configInstance  =  configuration as? ConfigurationInstance{
                 save(configInstance.id, json: generateJson(configInstance))
+            } else {
+                OCLogger.getLogger().logFatalWithMessages("\(NSStringFromClass(JsonFile)) save: cannot save configuration. configuration = \(configuration)")
             }
         }
         
         func save(configurationId: String, json: [String: AnyObject]) {
             do {
+                OCLogger.getLogger().logTraceWithMessages("\(NSStringFromClass(JsonFile)) save: configurationId = \(configurationId) ,json = \(json)")
                 try NSFileManager.defaultManager().createDirectoryAtPath(CacheFile.getFolder(configurationId), withIntermediateDirectories: true, attributes: nil)
                 
                 let data = try NSJSONSerialization.dataWithJSONObject(json, options: NSJSONWritingOptions(rawValue: 0))
@@ -69,11 +79,13 @@ class FileManager {
                     print("failed to write file '\(name)'")
                 }
             } catch let error as NSError {
-                print(error.localizedDescription);
+                OCLogger.getLogger().logFatalWithMessages("\(NSStringFromClass(JsonFile)) save: Cannot save configuration. error = \(error), configurationId = \(configurationId) ,json = \(json)")
             }
         }
         
         func read(configurationId: String) -> [String: AnyObject]? {
+            OCLogger.getLogger().logTraceWithMessages("\(NSStringFromClass(JsonFile)) read: configurationId = \(configurationId)")
+            
             let fullName = getFullName(configurationId)
             
             if !CacheFile.manager.fileExistsAtPath(fullName) {
@@ -87,7 +99,7 @@ class FileManager {
                     return try NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers) as? [String: AnyObject]
                 }
             } catch let error as NSError {
-                print(error.localizedDescription);
+                OCLogger.getLogger().logFatalWithMessages("\(NSStringFromClass(JsonFile)) save: Cannot read configuration. error = \(error), configurationId = \(configurationId)")
             }
             
             return nil
@@ -97,7 +109,9 @@ class FileManager {
             preconditionFailure("'JsonFile.savedJson' method must be overridden")
         }
     }
-
+    
+    
+    
     // ConfigurationFile
     private class ConfigurationFile: JsonFile {
         private static let configurationName = "configuration.json"
@@ -128,22 +142,22 @@ class FileManager {
         }
         
         private static func purge(configurationId: String) {
+            OCLogger.getLogger().logTraceWithMessages("purge: configurationId = \(configurationId)")
             let folder = CacheFile.getFolder(configurationId)
             
-            print("deleting \(folder)")
-            
+            OCLogger.getLogger().logTraceWithMessages("purge: removing cached folder. folder = \(folder), configurationId = \(configurationId)")
             if manager.fileExistsAtPath(folder) {
                 do {
                     try manager.removeItemAtPath(folder)
+                    OCLogger.getLogger().logTraceWithMessages("purge: cached folder removed. configurationId = \(configurationId)")
                 } catch let error as NSError {
-                    print(error.localizedDescription);
+                    OCLogger.getLogger().logFatalWithMessages("purge: error removing cached folder. folder = \(folder), configuration = \(configurationId), error = \(error)")
                 }
             }
         }
     }
 
     //MetadataFile
-    
     private class MetadataFile: JsonFile {
         private static let metaDataName       = "metadata.json"
         private static let attributeExpireAt  = "expiresAt"
@@ -164,6 +178,8 @@ class FileManager {
         }
         
         func isExpired(configurationId: String) -> Bool {
+            OCLogger.getLogger().logTraceWithMessages("isExpired: configurationId = \(configurationId)")
+            
             if let metadata = read(configurationId), expiresAt = metadata[MetadataFile.attributeExpireAt] as? String {
                 // NSDateFormatter is not thread-safe on versions earlier than 7
                 let formatter = NSDateFormatter()
@@ -175,8 +191,12 @@ class FileManager {
                 if let expiresAtDate = formatter.dateFromString(expiresAt) {
                     let now = NSDate()
                     
+                    OCLogger.getLogger().logTraceWithMessages("isExpired: expiresAtDate = \(expiresAtDate) isExpired = \(expiresAtDate.compare(now) == NSComparisonResult.OrderedAscending)")
+                    
                     return expiresAtDate.compare(now) == NSComparisonResult.OrderedAscending
                 }
+            } else {
+                OCLogger.getLogger().logTraceWithMessages("isExpired: metadata not found. configurationId = \(configurationId)")
             }
             
             return true

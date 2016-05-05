@@ -17,6 +17,7 @@
 		D4BA04E61CD7962F00F46FEF /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BA04E51CD7962F00F46FEF /* IBMMobileFirstPlatformFoundation.framework */; };
 		D4BA04EE1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BA04ED1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests.swift */; };
 		D4BA04F01CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AB438E1C55095100ADEBD3 /* IBMMobileFirstPlatformFoundationLiveUpdate.framework */; };
+		D4BA05501CDA70C600F46FEF /* OCLoggerSwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BA054F1CDA70C600F46FEF /* OCLoggerSwiftExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D4BA04EB1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBMMobileFirstPlatformFoundationLiveUpdateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BA04ED1CD7A55B00F46FEF /* IBMMobileFirstPlatformFoundationLiveUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMMobileFirstPlatformFoundationLiveUpdateTests.swift; sourceTree = "<group>"; };
 		D4BA04EF1CD7A55B00F46FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4BA054F1CDA70C600F46FEF /* OCLoggerSwiftExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCLoggerSwiftExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		D494EADA1CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate */ = {
 			isa = PBXGroup;
 			children = (
+				D4BA05511CDB1BA900F46FEF /* Logger */,
 				D4BA04FA1CD7D78E00F46FEF /* API */,
 				D494EAFA1CD7536000C5E552 /* Cache */,
 				D494EADC1CD74F8900C5E552 /* ConfigurationInstance.swift */,
@@ -131,6 +134,14 @@
 				D494EADB1CD74F8900C5E552 /* Configuration.swift */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		D4BA05511CDB1BA900F46FEF /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA054F1CDA70C600F46FEF /* OCLoggerSwiftExtension.swift */,
+			);
+			name = Logger;
 			sourceTree = "<group>";
 		};
 		EE7443145421F84C822FCA61 /* Pods */ = {
@@ -290,6 +301,7 @@
 				D494EAEA1CD74F8900C5E552 /* ConfigurationService.swift in Sources */,
 				D494EAE91CD74F8900C5E552 /* LocalCache.swift in Sources */,
 				D494EAE31CD74F8900C5E552 /* Configuration.swift in Sources */,
+				D4BA05501CDA70C600F46FEF /* OCLoggerSwiftExtension.swift in Sources */,
 				D494EAE41CD74F8900C5E552 /* ConfigurationInstance.swift in Sources */,
 				D494EAE61CD74F8900C5E552 /* FileManager.swift in Sources */,
 			);

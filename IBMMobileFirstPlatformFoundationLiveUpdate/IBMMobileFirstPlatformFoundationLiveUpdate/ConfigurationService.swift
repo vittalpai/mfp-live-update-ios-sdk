@@ -11,6 +11,7 @@ import IBMMobileFirstPlatformFoundation
 
 public class ConfigurationService {
     private let serviceURL: String = "adapters/dynamicAppsAdapter/configuration"
+    private let configurationScope : String = "configuration-user-login"
     
     public static let sharedInstance = ConfigurationService()
     
@@ -26,17 +27,12 @@ public class ConfigurationService {
      
      - Parameter completionHandler - the competition for retrieving the Configuration
      */
-    public func obtainConfiguration (segment: String, useCache: Bool = true, completionHandler: (configuration: Configuration?, error: NSError?) -> Void) {
+    public func obtainConfiguration (segment: String!, useCache: Bool = true, completionHandler: (configuration: Configuration?, error: NSError?) -> Void) {
         let url = NSURL(string: serviceURL.stringByAppendingString("/\(segment)"))!
         
-        if let cachedConfig = LocalCache.getConfiguration(segment) where useCache == true {
-            // Get cached configuration
-            completionHandler(configuration: cachedConfig, error: nil)
-        } else {
-            sendConfigRequest(segment, url: url, params: nil) { configuration, error in
-                completionHandler(configuration: configuration, error: error)
-            }
-        }
+        OCLogger.getLogger().logDebugWithMessages("obtainConfiguration: segment = \(segment), useCache = \(useCache), url = \(url)")
+        self.obtainConfiguration(segment, url: url, params: nil, useCache: useCache, completionHandler: completionHandler)
+
     }
     
     /**
@@ -52,18 +48,29 @@ public class ConfigurationService {
         let url = NSURL(string: serviceURL)!
         let id = buildIDFromParams(params)
         
+        
+        OCLogger.getLogger().logDebugWithMessages("obtainConfiguration: params = \(params), useCache = \(useCache), url = \(url)")
+        self.obtainConfiguration(id, url: url, params: params, useCache: useCache, completionHandler: completionHandler)
+    }
+    
+    
+    private func obtainConfiguration (id : String, url: NSURL, params: [String: String]?, useCache: Bool, completionHandler: (configuration: Configuration?, error: NSError?) -> Void) {
         if let cachedConfig = LocalCache.getConfiguration(id) where useCache == true {
             // Get cached configuration
+            OCLogger.getLogger().logDebugWithMessages("obtainConfiguration: Retrieved cached configuration. configuration = \(cachedConfig)")
             completionHandler(configuration: cachedConfig, error: nil)
         } else {
             sendConfigRequest(id, url: url, params: params) { configuration, error in
+                OCLogger.getLogger().logDebugWithMessages("obtainConfiguration: Retrieving new configuration from server. configuration = \(configuration)")
                 completionHandler(configuration: configuration, error: error)
             }
         }
     }
     
     private func sendConfigRequest(id: String, url:NSURL, params: [String: String]?, completionHandler: (Configuration?, NSError?) -> Void) {
-        let configurationServiceRequest = WLResourceRequest (URL: url, method: WLHttpMethodGet)
+        let configurationServiceRequest = WLResourceRequest (URL: url, method: WLHttpMethodGet, scope: configurationScope)
+        
+        OCLogger.getLogger().logTraceWithMessages("sendConfigRequest: id = \(id), url = \(url), params = \(params)")
         
         if params != nil {
             for (paramName, paramValue) in params! {
@@ -82,19 +89,25 @@ public class ConfigurationService {
                 }
                 configuration = ConfigurationInstance(id :id, data: json!)
                 // Save to cache
+                
+                OCLogger.getLogger().logTraceWithMessages("sendConfigRequest: saving configuration to cache. configuration = \(configuration)")
                 LocalCache.saveConfiguration(configuration!)
+            } else {
+                OCLogger.getLogger().logFatalWithMessages("sendConfigRequest: error while retriving configuration from server. error = \(wlError)")
             }
             completionHandler(configuration, wlError)
         }
     }
     
     private func buildIDFromParams (params: [String: String]?)->String {
+        OCLogger.getLogger().logTraceWithMessages("buildIDFromParams: params = \(params)")
         var paramsId = ""
         if (params?.count > 0) {
             for (paramName, paramValue) in params! {
                 paramsId += "_\(paramName)_\(paramValue)"
             }
         }
+        OCLogger.getLogger().logTraceWithMessages("buildIDFromParams: paramsId = \(paramsId)")
         return paramsId
     }
 }
