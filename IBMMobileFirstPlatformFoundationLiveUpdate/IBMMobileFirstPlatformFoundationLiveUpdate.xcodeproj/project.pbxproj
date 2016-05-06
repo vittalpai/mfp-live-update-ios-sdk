@@ -11,17 +11,16 @@
 		D494EAE41CD74F8900C5E552 /* ConfigurationInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EADC1CD74F8900C5E552 /* ConfigurationInstance.swift */; };
 		D494EAE61CD74F8900C5E552 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EADE1CD74F8900C5E552 /* FileManager.swift */; };
 		D494EAE71CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = D494EADF1CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D494EAE81CD74F8900C5E552 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D494EAE01CD74F8900C5E552 /* Info.plist */; };
 		D494EAE91CD74F8900C5E552 /* LocalCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EAE11CD74F8900C5E552 /* LocalCache.swift */; };
 		D494EAEA1CD74F8900C5E552 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EAE21CD74F8900C5E552 /* ConfigurationService.swift */; };
-		D4BA04E61CD7962F00F46FEF /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BA04E51CD7962F00F46FEF /* IBMMobileFirstPlatformFoundation.framework */; };
 		D4BA05501CDA70C600F46FEF /* OCLoggerSwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BA054F1CDA70C600F46FEF /* OCLoggerSwiftExtension.swift */; };
+		D4C66D821CDD323000E95E2B /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C66D811CDD323000E95E2B /* IBMMobileFirstPlatformFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		55E1C91C08B95FA0D434B3C3 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig"; sourceTree = "<group>"; };
+		85A933610407D6803CDFAC8B /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig"; sourceTree = "<group>"; };
 		A2AB438E1C55095100ADEBD3 /* IBMMobileFirstPlatformFoundationLiveUpdate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBMMobileFirstPlatformFoundationLiveUpdate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D024C771A059790884FD4672 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig"; sourceTree = "<group>"; };
+		A5747512C3BE6E801DF1B8BD /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig"; sourceTree = "<group>"; };
 		D494EADB1CD74F8900C5E552 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		D494EADC1CD74F8900C5E552 /* ConfigurationInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationInstance.swift; sourceTree = "<group>"; };
 		D494EADE1CD74F8900C5E552 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
@@ -29,8 +28,8 @@
 		D494EAE01CD74F8900C5E552 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D494EAE11CD74F8900C5E552 /* LocalCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCache.swift; sourceTree = "<group>"; };
 		D494EAE21CD74F8900C5E552 /* ConfigurationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
-		D4BA04E51CD7962F00F46FEF /* IBMMobileFirstPlatformFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IBMMobileFirstPlatformFoundation.framework; sourceTree = "<group>"; };
 		D4BA054F1CDA70C600F46FEF /* OCLoggerSwiftExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCLoggerSwiftExtension.swift; sourceTree = "<group>"; };
+		D4C66D811CDD323000E95E2B /* IBMMobileFirstPlatformFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMMobileFirstPlatformFoundation.framework; path = Pods/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Frameworks/IBMMobileFirstPlatformFoundation.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4BA04E61CD7962F00F46FEF /* IBMMobileFirstPlatformFoundation.framework in Frameworks */,
+				D4C66D821CDD323000E95E2B /* IBMMobileFirstPlatformFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,9 +47,18 @@
 		527142C6367D8C85426368DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D4BA04E51CD7962F00F46FEF /* IBMMobileFirstPlatformFoundation.framework */,
+				D4C66D811CDD323000E95E2B /* IBMMobileFirstPlatformFoundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		830C8554CBC20FF7B585B8DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85A933610407D6803CDFAC8B /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig */,
+				A5747512C3BE6E801DF1B8BD /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A2AB43841C55095100ADEBD3 = {
@@ -59,7 +67,7 @@
 				D494EADA1CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate */,
 				A2AB438F1C55095100ADEBD3 /* Products */,
 				527142C6367D8C85426368DF /* Frameworks */,
-				EE7443145421F84C822FCA61 /* Pods */,
+				830C8554CBC20FF7B585B8DF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,15 +118,6 @@
 			name = Logger;
 			sourceTree = "<group>";
 		};
-		EE7443145421F84C822FCA61 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				55E1C91C08B95FA0D434B3C3 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig */,
-				D024C771A059790884FD4672 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -137,12 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2AB43A21C55095100ADEBD3 /* Build configuration list for PBXNativeTarget "IBMMobileFirstPlatformFoundationLiveUpdate" */;
 			buildPhases = (
-				54DD26CF4B022B1338B63E16 /* Check Pods Manifest.lock */,
+				082A04CB038B5BA9CC922877 /* Check Pods Manifest.lock */,
 				A2AB43891C55095100ADEBD3 /* Sources */,
 				A2AB438A1C55095100ADEBD3 /* Frameworks */,
 				A2AB438B1C55095100ADEBD3 /* Headers */,
 				A2AB438C1C55095100ADEBD3 /* Resources */,
-				9B24C5ACC19D98ED2076316A /* Copy Pods Resources */,
+				A2F9392BD521EB24BEA39397 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,7 +159,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Dmitri Pikus";
 				TargetAttributes = {
 					A2AB438D1C55095100ADEBD3 = {
@@ -191,14 +190,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D494EAE81CD74F8900C5E552 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		54DD26CF4B022B1338B63E16 /* Check Pods Manifest.lock */ = {
+		082A04CB038B5BA9CC922877 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -213,7 +211,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9B24C5ACC19D98ED2076316A /* Copy Pods Resources */ = {
+		A2F9392BD521EB24BEA39397 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,7 +284,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -340,7 +338,7 @@
 		};
 		A2AB43A31C55095100ADEBD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55E1C91C08B95FA0D434B3C3 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig */;
+			baseConfigurationReference = 85A933610407D6803CDFAC8B /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -352,6 +350,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Frameworks",
 				);
 				INFOPLIST_FILE = IBMMobileFirstPlatformFoundationLiveUpdate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -367,7 +366,7 @@
 		};
 		A2AB43A41C55095100ADEBD3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D024C771A059790884FD4672 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig */;
+			baseConfigurationReference = A5747512C3BE6E801DF1B8BD /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -379,6 +378,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Frameworks",
 				);
 				INFOPLIST_FILE = IBMMobileFirstPlatformFoundationLiveUpdate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
