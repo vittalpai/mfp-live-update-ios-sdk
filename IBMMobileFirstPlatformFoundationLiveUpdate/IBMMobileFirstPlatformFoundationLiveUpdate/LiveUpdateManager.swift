@@ -9,11 +9,11 @@
 import Foundation
 import IBMMobileFirstPlatformFoundation
 
-public class ConfigurationService {
+public class LiveUpdateManager {
     private let serviceURL: String = "adapters/dynamicAppsAdapter/configuration"
     private let configurationScope : String = "configuration-user-login"
     
-    public static let sharedInstance = ConfigurationService()
+    public static let sharedInstance = LiveUpdateManager()
     
     private init() {
     }
@@ -84,7 +84,7 @@ public class ConfigurationService {
                 var json = wlResponse.responseJSON as? [String: AnyObject]
                 
                 if json == nil {
-                    OCLogger.getLogger().logFatalWithMessages("Error in MFPConfigurationService: invalid JSON response")
+                    OCLogger.getLogger().logFatalWithMessages("sendConfigRequest: invalid JSON response")
                     json = [String: AnyObject]()
                 }
                 configuration = ConfigurationInstance(id :id, data: json!)
