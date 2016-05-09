@@ -84,7 +84,7 @@ public class ConfigurationService {
                 var json = wlResponse.responseJSON as? [String: AnyObject]
                 
                 if json == nil {
-                    print("Error in MFPConfigurationService: invalid JSON response")
+                    OCLogger.getLogger().logFatalWithMessages("Error in MFPConfigurationService: invalid JSON response")
                     json = [String: AnyObject]()
                 }
                 configuration = ConfigurationInstance(id :id, data: json!)

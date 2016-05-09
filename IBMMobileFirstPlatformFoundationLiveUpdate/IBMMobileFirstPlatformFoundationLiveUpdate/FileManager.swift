@@ -76,7 +76,7 @@ class FileManager {
                 let data = try NSJSONSerialization.dataWithJSONObject(json, options: NSJSONWritingOptions(rawValue: 0))
                 
                 if !data.writeToFile(getFullName(configurationId), atomically: false) {
-                    print("failed to write file '\(name)'")
+                    OCLogger.getLogger().logFatalWithMessages("failed to write file '\(name)'")
                 }
             } catch let error as NSError {
                 OCLogger.getLogger().logFatalWithMessages("\(NSStringFromClass(JsonFile)) save: Cannot save configuration. error = \(error), configurationId = \(configurationId) ,json = \(json)")
