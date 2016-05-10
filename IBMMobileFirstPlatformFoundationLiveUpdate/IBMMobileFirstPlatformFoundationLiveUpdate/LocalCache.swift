@@ -15,24 +15,13 @@ class LocalCache {
         lock.lock()
         defer {lock.unlock()}
         
-        return getConfigurationReentered(configurationId)
+        return CacheFileManager.isExpired(configurationId) ? nil : CacheFileManager.configuration(configurationId)
     }
     
     static func saveConfiguration(configuration: Configuration) {
         lock.lock()
         defer {lock.unlock()}
         
-        FileManager.save(configuration)
-    }
-    
-    static func deleteConfiguration(configurationId: String) {
-        lock.lock()
-        defer {lock.unlock()}
-        
-        FileManager.deleteConfiguration(configurationId)
-    }
-    
-    private static func getConfigurationReentered(configurationId: String) -> Configuration? {
-        return FileManager.isExpired(configurationId) ? nil : FileManager.configuration(configurationId)
+        CacheFileManager.save(configuration)
     }
 }

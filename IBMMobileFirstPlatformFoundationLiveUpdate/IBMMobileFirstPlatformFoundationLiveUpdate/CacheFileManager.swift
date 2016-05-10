@@ -9,7 +9,7 @@
 import Foundation
 import IBMMobileFirstPlatformFoundation
 
-class FileManager {
+class CacheFileManager {
     
     //Static methods
     static func isExpired(configurationId: String) -> Bool {
@@ -26,10 +26,6 @@ class FileManager {
         let configurationFile = ConfigurationFile()
         
         configurationFile.save(configuration)
-    }
-    
-    static func deleteConfiguration(configurationId: String) {
-        ConfigurationFile.purge(configurationId)
     }
     
     //CacheFile
@@ -171,9 +167,7 @@ class FileManager {
         
         override func generateJson(configuration: ConfigurationInstance) -> [String: AnyObject] {
             var json = [String: AnyObject]()
-            
             json[MetadataFile.attributeExpireAt]  = configuration.data[MetadataFile.attributeExpireAt] as? String
-            
             return json
         }
         
@@ -190,9 +184,7 @@ class FileManager {
                 
                 if let expiresAtDate = formatter.dateFromString(expiresAt) {
                     let now = NSDate()
-                    
                     OCLogger.getLogger().logTraceWithMessages("isExpired: expiresAtDate = \(expiresAtDate) isExpired = \(expiresAtDate.compare(now) == NSComparisonResult.OrderedAscending)")
-                    
                     return expiresAtDate.compare(now) == NSComparisonResult.OrderedAscending
                 }
             } else {
