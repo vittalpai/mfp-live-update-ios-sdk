@@ -30,7 +30,7 @@ class CacheFileManager {
     
     //CacheFile
     class CacheFile {
-        private static let folderCache = "cache"
+        private static let folderCache = "liveupdate/cache"
         
         private static let manager = NSFileManager.defaultManager()
         private static let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
