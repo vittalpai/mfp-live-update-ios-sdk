@@ -10,7 +10,7 @@ import Foundation
 import IBMMobileFirstPlatformFoundation
 
 public class LiveUpdateManager {
-    private let serviceURL: String = "adapters/dynamicAppsAdapter/configuration"
+    private let serviceURL: String = "adapters/liveUpdateAdapter/configuration"
     private let configurationScope : String = "configuration-user-login"
     
     public static let sharedInstance = LiveUpdateManager()
