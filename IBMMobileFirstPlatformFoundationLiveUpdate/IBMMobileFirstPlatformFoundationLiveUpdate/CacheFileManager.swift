@@ -119,7 +119,7 @@ class CacheFileManager {
         
         override func save(configuration: Configuration) {
             if let configInstance = configuration as? ConfigurationInstance{
-                ConfigurationFile.purge(configInstance.id)
+                //Save metadata and configuration files
                 super.save(configInstance)
                 metadataFile.save(configInstance)
             }
@@ -135,21 +135,6 @@ class CacheFileManager {
         
         override func generateJson(configuration: ConfigurationInstance) -> [String: AnyObject] {
             return configuration.data
-        }
-        
-        private static func purge(configurationId: String) {
-            OCLogger.getLogger().logTraceWithMessages("purge: configurationId = \(configurationId)")
-            let folder = CacheFile.getFolder(configurationId)
-            
-            OCLogger.getLogger().logTraceWithMessages("purge: removing cached folder. folder = \(folder), configurationId = \(configurationId)")
-            if manager.fileExistsAtPath(folder) {
-                do {
-                    try manager.removeItemAtPath(folder)
-                    OCLogger.getLogger().logTraceWithMessages("purge: cached folder removed. configurationId = \(configurationId)")
-                } catch let error as NSError {
-                    OCLogger.getLogger().logFatalWithMessages("purge: error removing cached folder. folder = \(folder), configuration = \(configurationId), error = \(error)")
-                }
-            }
         }
     }
 
