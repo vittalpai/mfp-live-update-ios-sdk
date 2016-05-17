@@ -4,7 +4,7 @@ import IBMMobileFirstPlatformFoundation
 extension OCLogger {
     
     static func  getLogger ()->OCLogger {
-        return OCLogger.getInstanceWithPackage(NSBundle.mainBundle().bundleIdentifier)
+        return OCLogger.getInstanceWithPackage(NSBundle.init(forClass: OCLogger.classForCoder()).bundleIdentifier)
     }
     
     func logTraceWithMessages(message:String, _ args: CVarArgType...) {
