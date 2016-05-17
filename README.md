@@ -1,4 +1,4 @@
-# MFP Live Update iOS SDK
+# MFP LiveUpdate iOS SDK
 
 ## Sample usage for the API
 
