@@ -2,8 +2,6 @@
 
 ## Sample usage for the API
 
-### Obtains configuration 
-
 #### By Segment :
 
 ```Swift
