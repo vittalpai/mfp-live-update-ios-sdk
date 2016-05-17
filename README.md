@@ -1,6 +1,6 @@
 # MFP LiveUpdate iOS SDK
 
-## Sample usage for the API
+## Sample usages of the API
 
 #### By Segment :
 
