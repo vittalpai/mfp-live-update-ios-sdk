@@ -1,7 +1,6 @@
 # MFP Live Update iOS SDK
-> SDK for the LiveUpdate feature. Let's you build and application with dynmic settings. 
 
-## Sample usage of the API
+## Sample usage for the API
 
 ### Obtains configuration 
 
@@ -21,7 +20,6 @@ LiveUpdateManager.sharedInstance.obtainConfiguration("segment1", completionHandl
 #### By Params :
 
 ```Swift
-```Swift
 LiveUpdateManager.sharedInstance.obtainConfiguration(["paramKey":"paramValue"], completionHandler: { (configuration, error) in
   if error == nil {
     print (configuration?.getProperty("property1"))
@@ -31,9 +29,9 @@ LiveUpdateManager.sharedInstance.obtainConfiguration(["paramKey":"paramValue"], 
   }
 })
 ```
-```
 
-#### Disable cache (by default it is enabled):
+
+#### Disable cache (by default the cache is enabled):
 
 ```Swift
 LiveUpdateManager.sharedInstance.obtainConfiguration("segment1", useCache: false, completionHandler: { (configuration, error) in
