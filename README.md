@@ -1,8 +1,20 @@
 # MFP LiveUpdate iOS SDK
 
-## Sample usages of the API
+### Install Using CocaPods
+```cocapods
+use_frameworks!
 
-#### By Segment :
+source "git@github.ibm.com:MobileFirst/mfp-live-update-cocapods-specs.git"
+source "git@github.ibm.com:nostanle/imf-client-sdk-specs-inhouse.git"
+
+target 'TestLiveUpdate' do
+    pod 'IBMMobileFirstPlatformFoundationLiveUpdate'
+end
+```
+
+### Sample Usages Of The API
+
+#### Obtain Configuration By Segment :
 
 ```Swift
 LiveUpdateManager.sharedInstance.obtainConfiguration("segment1", completionHandler: { (configuration, error) in
@@ -15,7 +27,7 @@ LiveUpdateManager.sharedInstance.obtainConfiguration("segment1", completionHandl
 })
 ```
 
-#### By Params :
+#### Obtain Configuration By Params :
 
 ```Swift
 LiveUpdateManager.sharedInstance.obtainConfiguration(["paramKey":"paramValue"], completionHandler: { (configuration, error) in
