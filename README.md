@@ -1,7 +1,7 @@
 # MFP LiveUpdate iOS SDK
 
 ### Install Using CocaPods
-```pod
+```cocapods
 use_frameworks!
 
 source "git@github.ibm.com:MobileFirst/mfp-live-update-cocapods-specs.git"
