@@ -12,7 +12,7 @@ target 'TestLiveUpdate' do
 end
 ```
 
-### Sample usages of the API
+### Sample Usages Of The API
 
 #### Obtain Configuration By Segment :
 
