@@ -33,15 +33,15 @@ class ConfigurationInstance: Configuration {
         _id = id
     }
     
-    func isFeatureEnabled (featureName: String)->Bool? {
-        if let features = _data["data"]!["features"]!, feature =  features[featureName] as? Bool{
+    func isFeatureEnabled (featureId: String)->Bool? {
+        if let features = _data["data"]!["features"]!, feature =  features[featureId] as? Bool{
             return feature
         }
         return nil
     }
     
-    func getProperty (propertyName : String)->String? {
-        if let properties = _data["data"]!["properties"]!, property = properties[propertyName] as? String{
+    func getProperty (propertyId : String)->String? {
+        if let properties = _data["data"]!["properties"]!, property = properties[propertyId] as? String{
             return property
         }
         return nil
