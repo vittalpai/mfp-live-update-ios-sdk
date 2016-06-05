@@ -15,8 +15,7 @@
  */
 
 //
-//  FileManager.swift
-//  configuration-service-sdk-ios
+//  CacheFileManager.swift
 //
 //  Created by Oleg Sternberg & Ishai Borovoy on 19/1/16.
 //  Copyright © 2016 IBM. All rights reserved.

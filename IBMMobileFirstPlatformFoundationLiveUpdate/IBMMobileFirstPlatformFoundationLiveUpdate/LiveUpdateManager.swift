@@ -15,8 +15,8 @@
  */
 
 //
-//  MFPConfigurationService.swift
-//  configuration-service-sdk-ios
+//  LiveUpdateManager.swift
+//  A manager class for the  LiveUpdate APIs
 //
 //  Created by Oleg Sternberg & Ishai Borovoy on 14/1/16.
 //  Copyright © 2016 IBM. All rights reserved.
@@ -35,7 +35,7 @@ public class LiveUpdateManager {
     }
     
     /**
-     Obtains the configuration by segment from server or cache
+     Obtains a configuration from server / cache by a segment id
      
      - Parameter segment - the segment id which will be used by configuration adapter to return configuration
      
@@ -52,7 +52,7 @@ public class LiveUpdateManager {
     }
     
     /**
-    Obtains the configuration by params from server or cache
+    Obtains a configuration from server / cache by params
      
      - Parameter params - the parameters which will be used by configuration adapter to return configuration
      

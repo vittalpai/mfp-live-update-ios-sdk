@@ -15,8 +15,7 @@
  */
 
 //
-//  Configuration.swift
-//  configuration-service-sdk-ios
+//  ConfigurationInstance.swift
 //
 //  Created by Oleg Sternberg & Ishai Borovoy on 14/1/16.
 //  Copyright © 2016 IBM. All rights reserved.

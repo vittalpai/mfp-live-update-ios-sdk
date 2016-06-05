@@ -20,25 +20,27 @@
 //
 //  Created by Ishai Borovoy on 02/05/2016.
 //
+//  This protocol provides API for an obtained configuration.
+//  This API checks if a feature is enabled or getting value for a property.
 
 import Foundation
 
 public protocol Configuration {
     /**
-     This function to check if a feature is enabled
+     Check if a feature is enabled
      
-     - Parameter featureName - the feature id
+     - Parameter featureId - the feature id to be checked
      
-     - Returns: true in case feature is enabled
+     - Returns: true if feature is enabled or nil for non existing feature.
      */
     func isFeatureEnabled (featureId : String)->Bool?
     
     /**
-     This function returns the property value
+     Get value of a property
      
-     - Parameter propertyName - the property name
+     - Parameter propertyId - the property id
      
-     - Returns: value for the propertyName
+     - Returns: the value for the given propertyId, or nil in case the property doesn't exist
      */
     func getProperty (propertyId : String)->String?
 }
