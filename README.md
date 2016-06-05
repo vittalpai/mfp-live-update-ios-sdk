@@ -1,7 +1,9 @@
 MobileFirst Platform - LiveUpdate iOS SDK
 ===
 
-This package contains the LiveUpdate SDK for iOS
+###Contents
+LiveUpdate iOS SDK lets you query runtime configuration properties and features which you set in the LiveUpdate Settings screen in the MobileFirst Operations Console.
+With LiveUpdate integrated in your application you can implement feature toggling, A/B testing, feature segmentation and more.
 
 ###Installation
 
@@ -58,11 +60,6 @@ LiveUpdateManager.sharedInstance.obtainConfiguration("segment1", useCache: false
   }
 })
 ```
-
-
-###Contents
-LiveUpdate iOS SDK for query client runtime configuration from the server.
-
 
 ###Supported Levels
 - iOS 8
