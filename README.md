@@ -1,4 +1,4 @@
-MobileFirst Platform - LiveUpdate iOS SDK
+MobileFirst Foundation - LiveUpdate iOS SDK
 ===
 
 ###Contents
