@@ -11,9 +11,6 @@ With LiveUpdate integrated in your application you can implement feature togglin
 ```cocapods
 use_frameworks!
 
-source "git@github.ibm.com:MobileFirst/mfp-live-update-cocapods-specs.git"
-source "git@github.ibm.com:nostanle/imf-client-sdk-specs-inhouse.git"
-
 target 'TestLiveUpdate' do
     pod 'IBMMobileFirstPlatformFoundationLiveUpdate'
 end
