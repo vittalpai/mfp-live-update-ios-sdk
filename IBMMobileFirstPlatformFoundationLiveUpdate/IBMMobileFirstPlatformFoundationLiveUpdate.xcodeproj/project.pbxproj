@@ -7,29 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D494EAE31CD74F8900C5E552 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EADB1CD74F8900C5E552 /* Configuration.swift */; };
-		D494EAE41CD74F8900C5E552 /* ConfigurationInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EADC1CD74F8900C5E552 /* ConfigurationInstance.swift */; };
-		D494EAE61CD74F8900C5E552 /* CacheFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EADE1CD74F8900C5E552 /* CacheFileManager.swift */; };
-		D494EAE71CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = D494EADF1CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D494EAE91CD74F8900C5E552 /* LocalCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EAE11CD74F8900C5E552 /* LocalCache.swift */; };
-		D494EAEA1CD74F8900C5E552 /* LiveUpdateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D494EAE21CD74F8900C5E552 /* LiveUpdateManager.swift */; };
-		D4BA05501CDA70C600F46FEF /* OCLoggerSwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BA054F1CDA70C600F46FEF /* OCLoggerSwiftExtension.swift */; };
 		D4C66D821CDD323000E95E2B /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C66D811CDD323000E95E2B /* IBMMobileFirstPlatformFoundation.framework */; };
+		D4FFC03E1D12CC980025754C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FFC0361D12CC980025754C /* Configuration.swift */; };
+		D4FFC03F1D12CC980025754C /* ConfigurationInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FFC0371D12CC980025754C /* ConfigurationInstance.swift */; };
+		D4FFC0401D12CC980025754C /* LiveUpdateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FFC0381D12CC980025754C /* LiveUpdateManager.swift */; };
+		D4FFC0411D12CC980025754C /* CacheFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FFC03A1D12CC980025754C /* CacheFileManager.swift */; };
+		D4FFC0421D12CC980025754C /* LocalCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FFC03B1D12CC980025754C /* LocalCache.swift */; };
+		D4FFC0431D12CC980025754C /* OCLoggerSwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FFC03D1D12CC980025754C /* OCLoggerSwiftExtension.swift */; };
+		D4FFC0461D12CCBE0025754C /* IBMMobileFirstPlatformFoundationLiveUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = D4FFC0441D12CCBE0025754C /* IBMMobileFirstPlatformFoundationLiveUpdate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4FFC0471D12CCBE0025754C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4FFC0451D12CCBE0025754C /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		85A933610407D6803CDFAC8B /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig"; sourceTree = "<group>"; };
 		A2AB438E1C55095100ADEBD3 /* IBMMobileFirstPlatformFoundationLiveUpdate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBMMobileFirstPlatformFoundationLiveUpdate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5747512C3BE6E801DF1B8BD /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig"; sourceTree = "<group>"; };
-		D494EADB1CD74F8900C5E552 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		D494EADC1CD74F8900C5E552 /* ConfigurationInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationInstance.swift; sourceTree = "<group>"; };
-		D494EADE1CD74F8900C5E552 /* CacheFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheFileManager.swift; sourceTree = "<group>"; };
-		D494EADF1CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBMMobileFirstPlatformFoundationLiveUpdate.h; sourceTree = "<group>"; };
-		D494EAE01CD74F8900C5E552 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D494EAE11CD74F8900C5E552 /* LocalCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCache.swift; sourceTree = "<group>"; };
-		D494EAE21CD74F8900C5E552 /* LiveUpdateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveUpdateManager.swift; sourceTree = "<group>"; };
-		D4BA054F1CDA70C600F46FEF /* OCLoggerSwiftExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCLoggerSwiftExtension.swift; sourceTree = "<group>"; };
 		D4C66D811CDD323000E95E2B /* IBMMobileFirstPlatformFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMMobileFirstPlatformFoundation.framework; path = Pods/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Frameworks/IBMMobileFirstPlatformFoundation.framework; sourceTree = "<group>"; };
+		D4FFC0361D12CC980025754C /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		D4FFC0371D12CC980025754C /* ConfigurationInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationInstance.swift; sourceTree = "<group>"; };
+		D4FFC0381D12CC980025754C /* LiveUpdateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveUpdateManager.swift; sourceTree = "<group>"; };
+		D4FFC03A1D12CC980025754C /* CacheFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheFileManager.swift; sourceTree = "<group>"; };
+		D4FFC03B1D12CC980025754C /* LocalCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCache.swift; sourceTree = "<group>"; };
+		D4FFC03D1D12CC980025754C /* OCLoggerSwiftExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCLoggerSwiftExtension.swift; sourceTree = "<group>"; };
+		D4FFC0441D12CCBE0025754C /* IBMMobileFirstPlatformFoundationLiveUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBMMobileFirstPlatformFoundationLiveUpdate.h; sourceTree = "<group>"; };
+		D4FFC0451D12CCBE0025754C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +65,9 @@
 		A2AB43841C55095100ADEBD3 = {
 			isa = PBXGroup;
 			children = (
-				D494EADA1CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate */,
+				D4FFC0441D12CCBE0025754C /* IBMMobileFirstPlatformFoundationLiveUpdate.h */,
+				D4FFC0451D12CCBE0025754C /* Info.plist */,
+				D4FFC0341D12CC980025754C /* Source */,
 				A2AB438F1C55095100ADEBD3 /* Products */,
 				527142C6367D8C85426368DF /* Frameworks */,
 				830C8554CBC20FF7B585B8DF /* Pods */,
@@ -79,43 +82,41 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D494EADA1CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate */ = {
+		D4FFC0341D12CC980025754C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D4BA05511CDB1BA900F46FEF /* Logger */,
-				D4BA04FA1CD7D78E00F46FEF /* API */,
-				D494EAFA1CD7536000C5E552 /* Cache */,
-				D494EADC1CD74F8900C5E552 /* ConfigurationInstance.swift */,
-				D494EAE21CD74F8900C5E552 /* LiveUpdateManager.swift */,
-				D494EADF1CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate.h */,
-				D494EAE01CD74F8900C5E552 /* Info.plist */,
+				D4FFC0351D12CC980025754C /* API */,
+				D4FFC0391D12CC980025754C /* Cache */,
+				D4FFC03C1D12CC980025754C /* Logger */,
 			);
-			path = IBMMobileFirstPlatformFoundationLiveUpdate;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		D494EAFA1CD7536000C5E552 /* Cache */ = {
+		D4FFC0351D12CC980025754C /* API */ = {
 			isa = PBXGroup;
 			children = (
-				D494EAE11CD74F8900C5E552 /* LocalCache.swift */,
-				D494EADE1CD74F8900C5E552 /* CacheFileManager.swift */,
+				D4FFC0361D12CC980025754C /* Configuration.swift */,
+				D4FFC0371D12CC980025754C /* ConfigurationInstance.swift */,
+				D4FFC0381D12CC980025754C /* LiveUpdateManager.swift */,
 			);
-			name = Cache;
+			path = API;
 			sourceTree = "<group>";
 		};
-		D4BA04FA1CD7D78E00F46FEF /* API */ = {
+		D4FFC0391D12CC980025754C /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				D494EADB1CD74F8900C5E552 /* Configuration.swift */,
+				D4FFC03A1D12CC980025754C /* CacheFileManager.swift */,
+				D4FFC03B1D12CC980025754C /* LocalCache.swift */,
 			);
-			name = API;
+			path = Cache;
 			sourceTree = "<group>";
 		};
-		D4BA05511CDB1BA900F46FEF /* Logger */ = {
+		D4FFC03C1D12CC980025754C /* Logger */ = {
 			isa = PBXGroup;
 			children = (
-				D4BA054F1CDA70C600F46FEF /* OCLoggerSwiftExtension.swift */,
+				D4FFC03D1D12CC980025754C /* OCLoggerSwiftExtension.swift */,
 			);
-			name = Logger;
+			path = Logger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +126,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D494EAE71CD74F8900C5E552 /* IBMMobileFirstPlatformFoundationLiveUpdate.h in Headers */,
+				D4FFC0461D12CCBE0025754C /* IBMMobileFirstPlatformFoundationLiveUpdate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4FFC0471D12CCBE0025754C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,12 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D494EAEA1CD74F8900C5E552 /* LiveUpdateManager.swift in Sources */,
-				D494EAE91CD74F8900C5E552 /* LocalCache.swift in Sources */,
-				D494EAE31CD74F8900C5E552 /* Configuration.swift in Sources */,
-				D4BA05501CDA70C600F46FEF /* OCLoggerSwiftExtension.swift in Sources */,
-				D494EAE41CD74F8900C5E552 /* ConfigurationInstance.swift in Sources */,
-				D494EAE61CD74F8900C5E552 /* CacheFileManager.swift in Sources */,
+				D4FFC0421D12CC980025754C /* LocalCache.swift in Sources */,
+				D4FFC0411D12CC980025754C /* CacheFileManager.swift in Sources */,
+				D4FFC03E1D12CC980025754C /* Configuration.swift in Sources */,
+				D4FFC0431D12CC980025754C /* OCLoggerSwiftExtension.swift in Sources */,
+				D4FFC0401D12CC980025754C /* LiveUpdateManager.swift in Sources */,
+				D4FFC03F1D12CC980025754C /* ConfigurationInstance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +354,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Pods/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Frameworks",
 				);
-				INFOPLIST_FILE = IBMMobileFirstPlatformFoundationLiveUpdate/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -380,7 +382,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Pods/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Frameworks",
 				);
-				INFOPLIST_FILE = IBMMobileFirstPlatformFoundationLiveUpdate/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
