@@ -14,14 +14,14 @@ class IBMMobileFirstPlatformFoundationLiveUpdateTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        WLClient.sharedInstance().setServerUrl(NSURL(string: "http://localhost:9080/mfp/api"))
+        WLClient.sharedInstance().setServerUrl(NSURL(string: "http://159.122.222.159:9080/mfp/api"))
     }
     
     override func tearDown() {
         super.tearDown()
     }
     
-    /*func testObtainConfigurationWithSegment() {
+    func testObtainConfigurationWithSegment() {
         let expectation = self.expectationWithDescription("testObtainConfigurationWithSegment")
         
         LiveUpdateManager.sharedInstance.obtainConfiguration("segment1", useCache: false) { (configuration, error) in
@@ -38,11 +38,11 @@ class IBMMobileFirstPlatformFoundationLiveUpdateTests: XCTestCase {
     func testObtainConfigurationWithParams() {
         let expectation = self.expectationWithDescription("testObtainConfigurationWithSegment")
         
-        LiveUpdateManager.sharedInstance.obtainConfiguration(["":""], useCache: false) { (configuration, error) in
-            XCTAssertTrue((configuration?.isFeatureEnabled("feature1"))!, "featue1 should be enabled")
-            XCTAssertFalse((configuration?.isFeatureEnabled("feature2"))!, "featue2 should be disabled")
-            XCTAssertEqual(configuration?.getProperty("property1"), "value1")
-            XCTAssertEqual(configuration?.getProperty("property2"), "value2")
+        LiveUpdateManager.sharedInstance.obtainConfiguration(["param1":"value1"], useCache: false) { (configuration, error) in
+            XCTAssertFalse((configuration?.isFeatureEnabled("feature1"))!, "featue1 should be disabled")
+            XCTAssertTrue((configuration?.isFeatureEnabled("feature2"))!, "featue2 should be enabled")
+            XCTAssertEqual(configuration?.getProperty("property1"), "value11")
+            XCTAssertEqual(configuration?.getProperty("property2"), "value22")
             expectation.fulfill()
         }
         
@@ -65,7 +65,7 @@ class IBMMobileFirstPlatformFoundationLiveUpdateTests: XCTestCase {
     func testPerformanceExample() {
         self.measureBlock {
         }
-    }*/
+    }
 
     
 }
