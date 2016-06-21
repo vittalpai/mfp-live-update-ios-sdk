@@ -7,4 +7,4 @@ xcode_sdk: iphonesimulator9.3
 
 
 script:
-xcodebuild test -workspace IBMMobileFirstPlatformFoundationLiveUpdate/IBMMobileFirstPlatformFoundationLiveUpdate.xcworkspace -scheme IBMMobileFirstPlatformFoundationLiveUpdateTests -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO
+- xcodebuild test -workspace IBMMobileFirstPlatformFoundationLiveUpdate/IBMMobileFirstPlatformFoundationLiveUpdate.xcworkspace -scheme IBMMobileFirstPlatformFoundationLiveUpdateTests -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO
