@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "03A0107CA7EFF30FB205BE1A7FBA6996BAEB414C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "556D2FFBE22965804D797C243AFEABAB2C514798" : 0,
+    "03A0107CA7EFF30FB205BE1A7FBA6996BAEB414C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F7ED6FFA-1C2B-4CCB-8636-E195234DF979",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "556D2FFBE22965804D797C243AFEABAB2C514798" : "..\/mfp-live-update-test-apps",
+    "03A0107CA7EFF30FB205BE1A7FBA6996BAEB414C" : "mfp-live-update-ios-sdk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IBMMobileFirstPlatformFoundationLiveUpdate",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IBMMobileFirstPlatformFoundationLiveUpdate\/IBMMobileFirstPlatformFoundationLiveUpdate.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mfpdev\/mfp-live-update-ios-sdk",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03A0107CA7EFF30FB205BE1A7FBA6996BAEB414C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.ibm.com:MobileFirst\/mfp-live-update-test-apps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "556D2FFBE22965804D797C243AFEABAB2C514798"
+    }
+  ]
+}
