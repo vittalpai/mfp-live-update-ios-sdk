@@ -3,7 +3,7 @@ language: objective-c
 xcode_workspace: IBMMobileFirstPlatformFoundationLiveUpdate/IBMMobileFirstPlatformFoundationLiveUpdate.xcworkspace
 xcode_scheme: IBMMobileFirstPlatformFoundationLiveUpdate
 osx_image: xcode7.2
-xcode_sdk: iphonesimulator9.3
+xcode_sdk: iphonesimulator9.3 
 
 script:
 xcodebuild test -workspace IBMMobileFirstPlatformFoundationLiveUpdate/IBMMobileFirstPlatformFoundationLiveUpdate.xcworkspace -scheme IBMMobileFirstPlatformFoundationLiveUpdateTests -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO
