@@ -4,3 +4,6 @@ xcode_workspace: IBMMobileFirstPlatformFoundationLiveUpdate/IBMMobileFirstPlatfo
 xcode_scheme: IBMMobileFirstPlatformFoundationLiveUpdate
 osx_image: xcode7.2
 xcode_sdk: iphonesimulator9.2
+
+script:
+  - pod lib lint
