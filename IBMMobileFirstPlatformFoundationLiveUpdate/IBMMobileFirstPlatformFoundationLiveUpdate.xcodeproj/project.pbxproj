@@ -11,6 +11,8 @@
 		D4AB13981D1944DB004ABDEE /* IBMMobileFirstPlatformFoundationLiveUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AB438E1C55095100ADEBD3 /* IBMMobileFirstPlatformFoundationLiveUpdate.framework */; };
 		D4AB139F1D19458C004ABDEE /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4AB139E1D19458C004ABDEE /* mfpclient.plist */; };
 		D4B545FC1D196D3600BD5E20 /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C66D811CDD323000E95E2B /* IBMMobileFirstPlatformFoundation.framework */; };
+		D4B5461B1D19B9D200BD5E20 /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4AB139E1D19458C004ABDEE /* mfpclient.plist */; };
+		D4B5461C1D19BAB800BD5E20 /* mfpclient.plist in Sources */ = {isa = PBXBuildFile; fileRef = D4AB139E1D19458C004ABDEE /* mfpclient.plist */; };
 		D4C66D821CDD323000E95E2B /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C66D811CDD323000E95E2B /* IBMMobileFirstPlatformFoundation.framework */; };
 		D4FFC03E1D12CC980025754C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FFC0361D12CC980025754C /* Configuration.swift */; };
 		D4FFC03F1D12CC980025754C /* ConfigurationInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FFC0371D12CC980025754C /* ConfigurationInstance.swift */; };
@@ -254,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B5461B1D19B9D200BD5E20 /* mfpclient.plist in Resources */,
 				D4FFC0471D12CCBE0025754C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B5461C1D19BAB800BD5E20 /* mfpclient.plist in Sources */,
 				D4AB13961D1944DB004ABDEE /* IBMMobileFirstPlatformFoundationLiveUpdateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

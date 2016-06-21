@@ -5,7 +5,7 @@
 	<key>protocol</key>
 	<string>http</string>
 	<key>host</key>
-	<string>wl-postbuild.haifa.ibm.com</string>
+	<string>159.122.222.159</string>
 	<key>port</key>
 	<string>9080</string>
 	<key>wlServerContext</key>
