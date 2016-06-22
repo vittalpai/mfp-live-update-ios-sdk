@@ -30,6 +30,7 @@ class IBMMobileFirstPlatformFoundationLiveUpdateTests: CustomXCTest {
     
     override func setUp() {
         super.setUp()
+        
         //WLClient.sharedInstance().setServerUrl(NSURL(string: "http://159.122.222.159:9080/mfp/api"))
     }
     
