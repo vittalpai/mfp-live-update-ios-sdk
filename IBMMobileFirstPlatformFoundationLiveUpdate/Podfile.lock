@@ -1,10 +1,15 @@
 PODS:
-  - IBMMobileFirstPlatformFoundation (8.0.2016032802)
+  - IBMMobileFirstPlatformFoundation (8.0.2016061012)
+  - OCMock (3.3)
 
 DEPENDENCIES:
   - IBMMobileFirstPlatformFoundation (~> 8.0)
+  - OCMock (~> 3.3)
 
 SPEC CHECKSUMS:
-  IBMMobileFirstPlatformFoundation: 586a632f113d9a287ae7023a0e53ea2e376e8e99
+  IBMMobileFirstPlatformFoundation: cc756bb93071c593030daf5b6a0e7f9eade84416
+  OCMock: d68685bde31f69cb61d518dcb39269080c78b5ed
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 7b0ec83c8a605747a69997119781c1b4fcced120
+
+COCOAPODS: 1.0.1
