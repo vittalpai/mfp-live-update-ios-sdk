@@ -82,6 +82,7 @@ class IBMMobileFirstPlatformFoundationLiveUpdateTests: CustomXCTest {
     func testPerformanceExample() {
         self.measureBlock {
         }
+         
     }
 
     
