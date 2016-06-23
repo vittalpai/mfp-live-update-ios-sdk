@@ -5,7 +5,7 @@ MobileFirst Foundation - LiveUpdate iOS SDK
 
 ###Contents
 LiveUpdate iOS SDK lets you query runtime configuration properties and features which you set in the LiveUpdate Settings screen in the MobileFirst Operations Console.
-With LiveUpdate integrated in your application you can implement feature toggling, A/B testing, feature segmentation and more.
+With LiveUpdate integrated in your application you can implement feature toggling, A/B testing, feature segmentation and more. 
 
 ###Installation
 
