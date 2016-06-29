@@ -91,7 +91,7 @@ class IBMMobileFirstPlatformFoundationLiveUpdateTests: CustomXCTest {
     }
     
     func testObtainConfigurationWithNonEnglishAndSpaceParams() {
-        let expectation = self.expectationWithDescription("testObtainConfigurationWithSegment")
+        let expectation = self.expectationWithDescription("testObtainConfigurationWithNonEnglishAndSpaceParams")
         
         LiveUpdateManager.sharedInstance.obtainConfiguration(["Çà âｱｲｳ":"Çàâｱｲ ｳÇàâｱｲｳ"], useCache: false) { (configuration, error) in
             XCTAssertFalse((configuration?.isFeatureEnabled("Çàâｱｲ ｳÇàâｱｲｳ"))!, "featue1 should be disabled")
