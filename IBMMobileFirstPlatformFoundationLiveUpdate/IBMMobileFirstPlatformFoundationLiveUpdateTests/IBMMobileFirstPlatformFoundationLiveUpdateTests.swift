@@ -52,7 +52,7 @@ class IBMMobileFirstPlatformFoundationLiveUpdateTests: CustomXCTest {
         self.waitForExpectationsWithTimeout(10.0, handler: nil)
     }
     
-    func testObtainConfigurationWithNonEnglishCharecterSegment() {
+    func testObtainConfigurationWithNonEnglishCharacterSegment() {
         let expectation = self.expectationWithDescription("testObtainConfigurationWithNonEnglishCharecterSegment")
         
         LiveUpdateManager.sharedInstance.obtainConfiguration("Çàâｱｲｳ", useCache: false) { (configuration, error) in
