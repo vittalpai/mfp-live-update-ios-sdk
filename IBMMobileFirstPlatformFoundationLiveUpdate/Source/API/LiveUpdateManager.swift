@@ -44,11 +44,13 @@ public class LiveUpdateManager {
      - Parameter completionHandler - the competition for retrieving the Configuration
      */
     public func obtainConfiguration (segment: String!, useCache: Bool = true, completionHandler: (configuration: Configuration?, error: NSError?) -> Void) {
-        let url = NSURL(string: serviceURL.stringByAppendingString("/\(segment)"))!
+        let encodedSegment = ecodeString(segment)
+        let url = NSURL(string: serviceURL.stringByAppendingString("/\(encodedSegment!)"))!
         
         OCLogger.getLogger().logDebugWithMessages("obtainConfiguration: segment = \(segment), useCache = \(useCache), url = \(url)")
         self.obtainConfiguration(segment, url: url, params: nil, useCache: useCache, completionHandler: completionHandler)
-
+        
+        
     }
     
     /**
@@ -63,10 +65,15 @@ public class LiveUpdateManager {
     public func obtainConfiguration (params: [String:String], useCache: Bool = true, completionHandler: (configuration: Configuration?, error: NSError?) -> Void) {
         let url = NSURL(string: serviceURL)!
         let id = buildIDFromParams(params)
+        var emcodedParams = params
+        
+        for param in params {
+            emcodedParams.updateValue(ecodeString(param.1)!, forKey: ecodeString(param.0)!)
+        }
         
         
         OCLogger.getLogger().logDebugWithMessages("obtainConfiguration: params = \(params), useCache = \(useCache), url = \(url)")
-        self.obtainConfiguration(id, url: url, params: params, useCache: useCache, completionHandler: completionHandler)
+        self.obtainConfiguration(id, url: url, params: emcodedParams, useCache: useCache, completionHandler: completionHandler)
     }
     
     
@@ -125,5 +132,9 @@ public class LiveUpdateManager {
         }
         OCLogger.getLogger().logTraceWithMessages("buildIDFromParams: paramsId = \(paramsId)")
         return paramsId
+    }
+    
+    private func ecodeString(path: String?) -> String? {
+        return path?.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())
     }
 }

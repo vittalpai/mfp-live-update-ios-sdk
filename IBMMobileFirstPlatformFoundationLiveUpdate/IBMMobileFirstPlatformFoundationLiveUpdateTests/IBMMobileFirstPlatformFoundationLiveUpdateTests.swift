@@ -52,6 +52,30 @@ class IBMMobileFirstPlatformFoundationLiveUpdateTests: CustomXCTest {
         self.waitForExpectationsWithTimeout(10.0, handler: nil)
     }
     
+    func testObtainConfigurationWithNonEnglishCharacterSegment() {
+        let expectation = self.expectationWithDescription("testObtainConfigurationWithNonEnglishCharecterSegment")
+        
+        LiveUpdateManager.sharedInstance.obtainConfiguration("Çàâｱｲｳ", useCache: false) { (configuration, error) in
+            XCTAssertTrue((configuration?.isFeatureEnabled("ÇàâｱｲｳÇàâｱｲｳ"))!, "ÇàâｱｲｳÇàâｱｲｳ should be enabled")
+            XCTAssertEqual(configuration?.getProperty("property1"), "Çàâｱｲｳ")
+            XCTAssertEqual(configuration?.getProperty("property2"), "ÇàâｱｲｳÇàâｱｲｳ")
+            expectation.fulfill()
+        }
+        
+        self.waitForExpectationsWithTimeout(10.0, handler: nil)
+    }
+    
+    func testObtainConfigurationWithSpaceSegment() {
+        let expectation = self.expectationWithDescription("testObtainConfigurationWithSpaceSegment")
+        
+        LiveUpdateManager.sharedInstance.obtainConfiguration("segment 3", useCache: false) { (configuration, error) in
+            XCTAssertTrue((configuration?.isFeatureEnabled("feature 3"))!, "segment 3 should be enabled")
+            expectation.fulfill()
+        }
+        
+        self.waitForExpectationsWithTimeout(10.0, handler: nil)
+    }
+    
     func testObtainConfigurationWithParams() {
         let expectation = self.expectationWithDescription("testObtainConfigurationWithSegment")
         
@@ -60,6 +84,18 @@ class IBMMobileFirstPlatformFoundationLiveUpdateTests: CustomXCTest {
             XCTAssertTrue((configuration?.isFeatureEnabled("feature2"))!, "featue2 should be enabled")
             XCTAssertEqual(configuration?.getProperty("property1"), "value11")
             XCTAssertEqual(configuration?.getProperty("property2"), "value22")
+            expectation.fulfill()
+        }
+        
+        self.waitForExpectationsWithTimeout(10.0, handler: nil)
+    }
+    
+    func testObtainConfigurationWithNonEnglishAndSpaceParams() {
+        let expectation = self.expectationWithDescription("testObtainConfigurationWithNonEnglishAndSpaceParams")
+        
+        LiveUpdateManager.sharedInstance.obtainConfiguration(["Çà âｱｲｳ":"Çàâｱｲ ｳÇàâｱｲｳ"], useCache: false) { (configuration, error) in
+            XCTAssertFalse((configuration?.isFeatureEnabled("Çàâｱｲ ｳÇàâｱｲｳ"))!, "featue1 should be disabled")
+            XCTAssertEqual(configuration?.getProperty("ÇàâｱｲｳÇàâｱ ｲｳ"), "ÇàâｱｲｳÇàâｱ ｲｳ ÇàâｱｲｳÇàâｱ ｲｳ")
             expectation.fulfill()
         }
         
