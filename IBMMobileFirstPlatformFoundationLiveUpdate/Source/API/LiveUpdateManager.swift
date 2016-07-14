@@ -65,15 +65,11 @@ public class LiveUpdateManager {
     public func obtainConfiguration (params: [String:String], useCache: Bool = true, completionHandler: (configuration: Configuration?, error: NSError?) -> Void) {
         let url = NSURL(string: serviceURL)!
         let id = buildIDFromParams(params)
-        var emcodedParams = params
-        
-        for param in params {
-            emcodedParams.updateValue(ecodeString(param.1)!, forKey: ecodeString(param.0)!)
-        }
-        
+       
+    
         
         OCLogger.getLogger().logDebugWithMessages("obtainConfiguration: params = \(params), useCache = \(useCache), url = \(url)")
-        self.obtainConfiguration(id, url: url, params: emcodedParams, useCache: useCache, completionHandler: completionHandler)
+        self.obtainConfiguration(id, url: url, params: params, useCache: useCache, completionHandler: completionHandler)
     }
     
     
