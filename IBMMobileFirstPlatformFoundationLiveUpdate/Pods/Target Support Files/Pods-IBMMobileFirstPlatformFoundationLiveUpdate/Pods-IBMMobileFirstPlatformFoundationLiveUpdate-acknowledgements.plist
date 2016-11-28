@@ -1028,6 +1028,8 @@ Z125-3301-14 (07/2011)
 
 
 </string>
+			<key>License</key>
+			<string>IBM - MobileFirst Platform Foundation 8.0 license agreement</string>
 			<key>Title</key>
 			<string>IBMMobileFirstPlatformFoundation</string>
 			<key>Type</key>

@@ -1,9 +1,8 @@
-use_frameworks! 
+use_frameworks!
 target "IBMMobileFirstPlatformFoundationLiveUpdate" do
 	pod 'IBMMobileFirstPlatformFoundation', '~> 8.0'
 end
 
 target "IBMMobileFirstPlatformFoundationLiveUpdateTests" do
         pod 'IBMMobileFirstPlatformFoundation', '~> 8.0'
-        pod 'OCMock', '~> 3.3'
 end
