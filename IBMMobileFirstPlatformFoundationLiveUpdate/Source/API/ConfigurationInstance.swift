@@ -24,23 +24,23 @@
 import Foundation
 
 class ConfigurationInstance: Configuration {
-    private var _data: [String: AnyObject]
-    private var _id : String
+    fileprivate var _data: [String: AnyObject]
+    fileprivate var _id : String
     
     init(id: String, data: [String: AnyObject]) {
         _data = data
         _id = id
     }
     
-    func isFeatureEnabled (featureId: String)->Bool? {
-        if let features = _data["data"]!["features"]!, feature =  features[featureId] as? Bool{
+    func isFeatureEnabled (_ featureId: String)->Bool? {
+        if let features = _data["data"]!["features"]! as? NSDictionary, let feature =  features[featureId] as? Bool{
             return feature
         }
         return nil
     }
     
-    func getProperty (propertyId : String)->String? {
-        if let properties = _data["data"]!["properties"]!, property = properties[propertyId] as? String{
+    func getProperty (_ propertyId : String)->String? {
+        if let properties = _data["data"]!["properties"]! as? NSDictionary, let property = properties[propertyId] as? String{
             return property
         }
         return nil
