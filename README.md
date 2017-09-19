@@ -19,9 +19,9 @@ end
 ```
 
 ### Configuration In MobileFirst Operation Console
-In your application under Scope-Elements Mapping in security tab you must map the scope 'configuration-user-login' to security check, you can map it to empty string if you want to use the default protection.  More info about [scope mapping](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/authorization-concepts/#scope-mapping)
+In your application under Scope-Elements Mapping in security tab you must map the scope 'configuration-user-login' to security check, you can map it to empty string if you want to use the default protection.  More info about [scope mapping](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/application-development/live-update/#configuring-application-security)
 
-To learn more on how to use the Live Update SDK see following the [tutorial](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/live-update/).
+To learn more on how to use the Live Update SDK see following the [tutorial](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/application-development/live-update/).
 
 #### Sample Usages Of The API
 
