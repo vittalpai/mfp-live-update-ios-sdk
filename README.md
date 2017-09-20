@@ -68,7 +68,8 @@ LiveUpdateManager.sharedInstance.obtainConfiguration("segment1", useCache: false
 ###Supported Levels
 - iOS 8
 - iOS 9
-
+- iOS 10
+- iOS 11
 
 Copyright 2015 IBM Corp.
 
