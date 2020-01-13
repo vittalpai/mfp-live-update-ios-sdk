@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		59EE7165F538D22DDC45C7F8 /* Pods_IBMMobileFirstPlatformFoundationLiveUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58569570805CD46CB6E0A09F /* Pods_IBMMobileFirstPlatformFoundationLiveUpdate.framework */; };
 		8E8C0F3419CB26E0D1C8D5B8 /* Pods_IBMMobileFirstPlatformFoundationLiveUpdateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FD165083D11018F9B8FDB0 /* Pods_IBMMobileFirstPlatformFoundationLiveUpdateTests.framework */; };
 		D4AB13981D1944DB004ABDEE /* IBMMobileFirstPlatformFoundationLiveUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AB438E1C55095100ADEBD3 /* IBMMobileFirstPlatformFoundationLiveUpdate.framework */; };
 		D4B545FC1D196D3600BD5E20 /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C66D811CDD323000E95E2B /* IBMMobileFirstPlatformFoundation.framework */; };
@@ -19,7 +18,6 @@
 		D4FFC0421D12CC980025754C /* LocalCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FFC03B1D12CC980025754C /* LocalCache.swift */; };
 		D4FFC0431D12CC980025754C /* OCLoggerSwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FFC03D1D12CC980025754C /* OCLoggerSwiftExtension.swift */; };
 		D4FFC0461D12CCBE0025754C /* IBMMobileFirstPlatformFoundationLiveUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = D4FFC0441D12CCBE0025754C /* IBMMobileFirstPlatformFoundationLiveUpdate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4FFC0471D12CCBE0025754C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4FFC0451D12CCBE0025754C /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +56,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4C66D821CDD323000E95E2B /* IBMMobileFirstPlatformFoundation.framework in Frameworks */,
-				59EE7165F538D22DDC45C7F8 /* Pods_IBMMobileFirstPlatformFoundationLiveUpdate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +227,7 @@
 					A2AB438D1C55095100ADEBD3 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = TN6YQNGLXP;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 1110;
 					};
 					D4AB13921D1944DB004ABDEE = {
 						CreatedOnToolsVersion = 7.3;
@@ -242,6 +239,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = A2AB43841C55095100ADEBD3;
@@ -260,7 +258,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4FFC0471D12CCBE0025754C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +298,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate-resources.sh\"\n";
+			shellScript = "
+";
 			showEnvVarsInLog = 0;
 		};
 		76FAC7515DCB8207D5DB50AC /* [CP] Embed Pods Frameworks */ = {
@@ -495,12 +493,25 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"z\"",
+					"-framework",
+					"\"IBMMobileFirstPlatformFoundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.worklight.IBMMobileFirstPlatformFoundationLiveUpdate;
 				PRODUCT_NAME = IBMMobileFirstPlatformFoundationLiveUpdate;
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -525,11 +536,24 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"z\"",
+					"-framework",
+					"\"IBMMobileFirstPlatformFoundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.worklight.IBMMobileFirstPlatformFoundationLiveUpdate;
 				PRODUCT_NAME = IBMMobileFirstPlatformFoundationLiveUpdate;
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -547,6 +571,19 @@
 				INFOPLIST_FILE = IBMMobileFirstPlatformFoundationLiveUpdateTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"z\"",
+					"-framework",
+					"\"IBMMobileFirstPlatformFoundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.worklight.IBMMobileFirstPlatformFoundationLiveUpdateTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "IBMMobileFirstPlatformFoundationLiveUpdateTests/Test-Bridging-Header.h";
@@ -570,6 +607,19 @@
 				INFOPLIST_FILE = IBMMobileFirstPlatformFoundationLiveUpdateTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"z\"",
+					"-framework",
+					"\"IBMMobileFirstPlatformFoundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.worklight.IBMMobileFirstPlatformFoundationLiveUpdateTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "IBMMobileFirstPlatformFoundationLiveUpdateTests/Test-Bridging-Header.h";
