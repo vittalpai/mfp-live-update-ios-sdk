@@ -298,8 +298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		76FAC7515DCB8207D5DB50AC /* [CP] Embed Pods Frameworks */ = {
