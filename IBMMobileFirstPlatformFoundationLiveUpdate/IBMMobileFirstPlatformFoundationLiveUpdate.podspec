@@ -7,7 +7,7 @@ With LiveUpdate integrated in your application you can implement feature togglin
 
   s.homepage         = 'https://mobilefirstplatform.ibmcloud.com'
   s.license          = 'http://www.apache.org/licenses/LICENSE-2.0'
-  s.author      	 = { 'Ishai Borovoy' => 'ishaib@il.ibm.com' }
+  s.author      	 = { 'Vittal R Pai' => 'vittalpai@in.ibm.com' }
   
   s.platform     	 = :ios, '8.0'
   s.source           = {:git => 'https://github.com/mfpdev/mfp-live-update-ios-sdk.git', :tag => s.version}

@@ -90,7 +90,7 @@ open class LiveUpdateManager {
      
      - Parameter completionHandler - the competition for retrieving the Configuration
      */
-    func obtainConfiguration (useCache: Bool = true, completionHandler: @escaping (_ configuration: Configuration?, _ error: NSError?) -> Void) {
+    open func obtainConfiguration (useCache: Bool = true, completionHandler: @escaping (_ configuration: Configuration?, _ error: NSError?) -> Void) {
         let encodedSegment = ecodeString("all")
         let urlString = applicationRoute +  serviceURL + "/\(encodedSegment!)"
         if isValidUrl(url: urlString) {
