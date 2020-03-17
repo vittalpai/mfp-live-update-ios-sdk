@@ -10,9 +10,7 @@ for managing MobileFirst applications. The SDK manages all of the communication 
 Install the SDK with [CocoaPods](http://cocoapods.org/).  To install CocoaPods, see [CocoaPods Getting Started](http://guides.cocoapods.org/using/getting-started.html#getting-started). 
 The SDK is downloaded when you run the pod install command, after you specify the SDK source path in your podfile.
 For more information, see:
-- (MobileFirst Platform Foundation) [Developing a new iOS native application with CocoaPods ](http://www.ibm.com/support/knowledgecenter/SSHS8R_8.0.0/com.ibm.worklight.dev.doc/dev/t_dev_new_w_cocoapods.html
-
-- (MobileFirst Platform Foundation for iOS) [Developing a new iOS native application with CocoaPods ](http://www.ibm.com/support/knowledgecenter/SSHSCD_8.0.0/com.ibm.worklight.dev.doc/dev/t_dev_new_w_cocoapods.html
+- (MobileFirst Platform Foundation) [Developing a new iOS native application with CocoaPods ](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/application-development/sdk/ios/#adding-the-mobilefirst-native-sdk
 
 
 ###SDK contents
@@ -22,14 +20,16 @@ IBM MobileFirst Platform Foundation for iOS.  The SDK contains the following pod
 
 - **IBMMobileFirstPlatformFoundation**: Provides core functionality. It implements client-server connections, handles security, accesses server resources and handles their responses. Includes iOS and watchOS2 support.
 - **IBMMobileFirstPlatformFoundationJSONStore**: Enables the JSONStore feature for iOS native MobileFirst apps. It contains JSONStore native APIs.
-- **IBMMobileFirstPlatformFoundationPush: Provides** support for push notifications from the server.
+- **IBMMobileFirstPlatformFoundationPush**: Provides support for push notifications from the server.
+- **IBMMobileFirstPlatformFoundationLiveUpdate**: Enables LiveUpdate feature for iOS native MobileFirst app where user can implement feature toggling, A/B testing, feature segmentation and more. 
 - **IBMMobileFirstPlatformFoundationOpenSSLUtils**: Provides support for encryption and decryption using OpenSSL.
 
 Each pod handles one or more iOS frameworks. All of the pods depend on, include and load the IBMMobileFirstPlatformFoundation pod/framework. 
 
 
-###Supported iOS levels
+###Supported iOS & MFP Server levels
 - iOS 8 and above
+- This version of the cocoapod requires a minimum MobileFirst server version of 8.0.0.0-IF202003051505
 
 ###Getting started 
 
@@ -38,8 +38,7 @@ Get started with the following tutorials:
 - [Quickly Get Started](https://mobilefirstplatform.ibmcloud.com)
 
 ###Learning More
-   * Visit [IBM MobileFirst Platform Foundation, version 8.0.0 in IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SSHS8R_8.0.0/wl_welcome.html).
-   * Visit the [IBM MobileFirst Platform Foundation for iOS, version 8.0.0 in IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SSHSCD_8.0.0/wl_welcome.html).
+   * Visit [IBM MobileFirst Platform Foundation Dev Center](https://mobilefirstplatform.ibmcloud.com).
 
 ###Connect with IBM MobileFirst
 [Web](http://www.ibm.com/mobilefirst) |
@@ -49,10 +48,10 @@ Get started with the following tutorials:
 [Linkedin](http://www.linkedin.com/groups/IBM-Mobile-4579117/about)
 
 
-Copyright 2016 IBM Corp.
+Copyright 2020 IBM Corp.
 
    IBM - IBM MobileFirst Platform Foundation v8.0 license agreement
 
-       https://mobilefirstplatform.ibmcloud.com/licenses/ipla/
+       https://mobilefirstplatform.ibmcloud.com/licenses/ipla
 
-[Terms of Use](https://mobilefirstplatform.ibmcloud.com/licenses/ipla/)
+[Terms of Use](https://mobilefirstplatform.ibmcloud.com/licenses/ipla)
