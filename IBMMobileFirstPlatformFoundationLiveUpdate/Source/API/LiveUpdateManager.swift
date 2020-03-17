@@ -90,7 +90,7 @@ open class LiveUpdateManager {
      
      - Parameter completionHandler - the competition for retrieving the Configuration
      */
-    open func obtainConfiguration (useCache: Bool = true, completionHandler: @escaping (_ configuration: Configuration?, _ error: NSError?) -> Void) {
+    func obtainConfiguration (useCache: Bool = true, completionHandler: @escaping (_ configuration: Configuration?, _ error: NSError?) -> Void) {
         let encodedSegment = ecodeString("all")
         let urlString = applicationRoute +  serviceURL + "/\(encodedSegment!)"
         if isValidUrl(url: urlString) {
@@ -113,7 +113,7 @@ open class LiveUpdateManager {
      
      - Parameter completionHandler - the competition for retrieving the Configuration
      */
-    open func obtainConfiguration (_ segment: String!, useCache: Bool = true, completionHandler: @escaping (_ configuration: Configuration?, _ error: NSError?) -> Void) {
+    fileprivate func obtainConfiguration (_ segment: String!, useCache: Bool = true, completionHandler: @escaping (_ configuration: Configuration?, _ error: NSError?) -> Void) {
         let encodedSegment = ecodeString(segment)
         let urlString = applicationRoute +  serviceURL + "/\(encodedSegment!)"
         if isValidUrl(url: urlString) {
@@ -136,7 +136,7 @@ open class LiveUpdateManager {
      
      - Parameter completionHandler - the competition for retrieving the Configuration
      */
-    open func obtainConfiguration (_ params: [String:String], useCache: Bool = true, completionHandler: @escaping (_ configuration: Configuration?, _ error: NSError?) -> Void) {
+    fileprivate func obtainConfiguration (_ params: [String:String], useCache: Bool = true, completionHandler: @escaping (_ configuration: Configuration?, _ error: NSError?) -> Void) {
         let urlString = applicationRoute + bundleID + serviceURL
         if isValidUrl(url: urlString) {
             let url = URL(string: urlString)!

@@ -19,29 +19,16 @@ end
 ```
 
 ### Configuration In MobileFirst Operation Console
-In your application under Scope-Elements Mapping in security tab you must map the scope 'configuration-user-login' to security check, you can map it to empty string if you want to use the default protection.  More info about [scope mapping](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/application-development/live-update/#configuring-application-security)
+In your application under Scope-Elements Mapping in security tab you must map the scope 'liveupdate.mobileclient' to security check, you can map it to empty string if you want to use the default protection.  More info about [scope mapping](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/application-development/live-update/#configuring-application-security)
 
-To learn more on how to use the Live Update SDK see following the [tutorial](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/application-development/live-update/).
+To learn more on how to use the Live Update SDK see following the [tutorial](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/application-development/live-update-service/).
 
 #### Sample Usages Of The API
 
-##### Obtain Configuration By Segment :
+##### Obtain Configuration :
 
 ```Swift
-LiveUpdateManager.sharedInstance.obtainConfiguration("segment1", completionHandler: { (configuration, error) in
-  if error == nil {
-    print (configuration?.getProperty("property1"))
-    print (configuration?.isFeatureEnabled("feature1"))
-  } else {
-    print (error)
-  }
-})
-```
-
-##### Obtain Configuration By Params :
-
-```Swift
-LiveUpdateManager.sharedInstance.obtainConfiguration(["paramKey":"paramValue"], completionHandler: { (configuration, error) in
+LiveUpdateManager.sharedInstance.obtainConfiguration(completionHandler: { (configuration, error) in
   if error == nil {
     print (configuration?.getProperty("property1"))
     print (configuration?.isFeatureEnabled("feature1"))
@@ -55,7 +42,7 @@ LiveUpdateManager.sharedInstance.obtainConfiguration(["paramKey":"paramValue"], 
 ##### Disable cache (by default the cache is enabled):
 
 ```Swift
-LiveUpdateManager.sharedInstance.obtainConfiguration("segment1", useCache: false, completionHandler: { (configuration, error) in
+LiveUpdateManager.sharedInstance.obtainConfiguration(useCache: false, completionHandler: { (configuration, error) in
   if error == nil {
     print (configuration?.getProperty("property1"))
     print (configuration?.isFeatureEnabled("feature1"))
@@ -70,8 +57,10 @@ LiveUpdateManager.sharedInstance.obtainConfiguration("segment1", useCache: false
 - iOS 9
 - iOS 10
 - iOS 11
+- iOS 12
+- iOS 13
 
-Copyright 2015 IBM Corp.
+Copyright 2020 IBM Corp.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

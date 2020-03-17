@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = 'IBMMobileFirstPlatformFoundationLiveUpdate'
-  s.version          = '8.0.2017092018'
+  s.version          = '8.0.202003051505'
   s.summary          = 'LiveUpdate iOS SDK for IBM MobileFirst Foundation'
   s.description      = 'LiveUpdate iOS SDK lets you query runtime configuration properties and features which you set in the LiveUpdate Settings screen in the MobileFirst Operations Console.
-With LiveUpdate integrated in your application you can implement feature toggling, A/B testing, feature segmentation and more.'
+With LiveUpdate integrated in your application you can implement feature toggling and more.'
 
   s.homepage         = 'https://mobilefirstplatform.ibmcloud.com'
   s.license          = 'http://www.apache.org/licenses/LICENSE-2.0'
