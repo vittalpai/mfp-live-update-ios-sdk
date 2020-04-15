@@ -43,4 +43,14 @@ public protocol Configuration {
      - Returns: the value for the given propertyId, or nil in case the property doesn't exist
      */
     func getProperty (_ propertyId : String)->String?
+    
+    /**
+    Get Configuration Data
+    
+    - Parameter None
+    
+    - Returns: the configuration data
+    */
+    func getData()-> [String: AnyObject]
+    
 }
