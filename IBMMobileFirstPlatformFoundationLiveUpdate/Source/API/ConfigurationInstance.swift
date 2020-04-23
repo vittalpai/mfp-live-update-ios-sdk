@@ -46,8 +46,8 @@ class ConfigurationInstance: Configuration {
         return nil
     }
     
-    func getData()-> [String: AnyObject]{
-        return _data
+    func getConfigData()-> [String: AnyObject]{
+        return _data["data"] as! [String : AnyObject]
     }
     
     var id: String {

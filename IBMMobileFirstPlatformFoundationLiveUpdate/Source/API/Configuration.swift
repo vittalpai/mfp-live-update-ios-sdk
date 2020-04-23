@@ -51,6 +51,6 @@ public protocol Configuration {
     
     - Returns: the configuration data
     */
-    func getData()-> [String: AnyObject]
+    func getConfigData()-> [String: AnyObject]
     
 }
