@@ -46,9 +46,7 @@ public protocol Configuration {
     
     /**
     Get Configuration Data
-    
-    - Parameter None
-    
+   
     - Returns: the configuration data
     */
     func getConfigData()-> [String: AnyObject]
