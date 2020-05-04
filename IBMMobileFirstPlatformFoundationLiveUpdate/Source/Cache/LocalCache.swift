@@ -24,4 +24,18 @@ class LocalCache {
         
         CacheFileManager.save(configuration)
     }
+    
+    static func getMessage() -> Message? {
+           lock.lock()
+           defer {lock.unlock()}
+           
+           return nil
+       }
+       
+       static func saveMessage(_ message: Message) {
+//           lock.lock()
+//           defer {lock.unlock()}
+//           
+//           CacheFileManager.save(configuration)
+       }
 }

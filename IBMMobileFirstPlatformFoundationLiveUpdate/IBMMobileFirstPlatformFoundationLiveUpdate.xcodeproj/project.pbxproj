@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CAFEFEB244C2B1400C35AF6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFEFEA244C2B1400C35AF6 /* Message.swift */; };
+		0CAFEFED244C2B8B00C35AF6 /* InAppMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFEFEC244C2B8B00C35AF6 /* InAppMessage.swift */; };
+		0CAFEFEF244C2D4F00C35AF6 /* MessageInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFEFEE244C2D4F00C35AF6 /* MessageInstance.swift */; };
 		8E8C0F3419CB26E0D1C8D5B8 /* Pods_IBMMobileFirstPlatformFoundationLiveUpdateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FD165083D11018F9B8FDB0 /* Pods_IBMMobileFirstPlatformFoundationLiveUpdateTests.framework */; };
 		D4AB13981D1944DB004ABDEE /* IBMMobileFirstPlatformFoundationLiveUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AB438E1C55095100ADEBD3 /* IBMMobileFirstPlatformFoundationLiveUpdate.framework */; };
 		D4B545FC1D196D3600BD5E20 /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C66D811CDD323000E95E2B /* IBMMobileFirstPlatformFoundation.framework */; };
@@ -31,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CAFEFEA244C2B1400C35AF6 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		0CAFEFEC244C2B8B00C35AF6 /* InAppMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppMessage.swift; sourceTree = "<group>"; };
+		0CAFEFEE244C2D4F00C35AF6 /* MessageInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInstance.swift; sourceTree = "<group>"; };
 		58569570805CD46CB6E0A09F /* Pods_IBMMobileFirstPlatformFoundationLiveUpdate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBMMobileFirstPlatformFoundationLiveUpdate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		674D5A0C691226EE023E99D2 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate.debug.xcconfig"; sourceTree = "<group>"; };
 		6D6954E70FBB95EC3F06E7C4 /* Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBMMobileFirstPlatformFoundationLiveUpdate/Pods-IBMMobileFirstPlatformFoundationLiveUpdate.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +136,9 @@
 				D4FFC0361D12CC980025754C /* Configuration.swift */,
 				D4FFC0371D12CC980025754C /* ConfigurationInstance.swift */,
 				D4FFC0381D12CC980025754C /* LiveUpdateManager.swift */,
+				0CAFEFEC244C2B8B00C35AF6 /* InAppMessage.swift */,
+				0CAFEFEA244C2B1400C35AF6 /* Message.swift */,
+				0CAFEFEE244C2D4F00C35AF6 /* MessageInstance.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -355,7 +364,10 @@
 			files = (
 				D4FFC0421D12CC980025754C /* LocalCache.swift in Sources */,
 				D4FFC0411D12CC980025754C /* CacheFileManager.swift in Sources */,
+				0CAFEFED244C2B8B00C35AF6 /* InAppMessage.swift in Sources */,
 				D4FFC03E1D12CC980025754C /* Configuration.swift in Sources */,
+				0CAFEFEF244C2D4F00C35AF6 /* MessageInstance.swift in Sources */,
+				0CAFEFEB244C2B1400C35AF6 /* Message.swift in Sources */,
 				D4FFC0431D12CC980025754C /* OCLoggerSwiftExtension.swift in Sources */,
 				D4FFC0401D12CC980025754C /* LiveUpdateManager.swift in Sources */,
 				D4FFC03F1D12CC980025754C /* ConfigurationInstance.swift in Sources */,
